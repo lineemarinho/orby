@@ -1,0 +1,86 @@
+<div class="container-modal">
+  <div class="title-modal">Iniciar sessão</div>
+  <div class="subtitle-modal">
+    Por fim, configure e personalize a neuromodulação:
+  </div>
+
+  <div class="container-device">
+    <img src="/assets/images/illustrations/exercicio.png" alt="time" />
+
+    <div class="filters">
+      <div class="time">
+        <label for="time"> Tempo da sessão</label>
+        <select name="times" id="pet-select">
+          <option value="dog">Time</option>
+          <option value="cat">Time</option>
+        </select>
+      </div>
+      <div class="frequency">
+        <label for="frequency">Frequência</label>
+        <select name="times" id="pet-select">
+          <option value="dog">Time</option>
+          <option value="cat">Time</option>
+        </select>
+      </div>
+      <div class="intensity">
+        <label for="intensity">Intensidade do atuador</label>
+        <div class="select">
+          <input type="range" />
+
+          <div class="frequency">
+            <select name="times">
+              <option value="dog">7.2V</option>
+              <option value="cat">7.2V</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="title-configure">
+    Outras configurações
+    <img
+      alt="patients"
+      (click)="openConfigure()"
+      style="float: right"
+      src="/assets/images/icons/arrow.svg" />
+  </div>
+
+  <div class="configure" *ngIf="configure">
+    <div class="filters">
+      <div class="time">
+        <label for="time"> Tempo da sessão</label>
+        <select name="times" id="pet-select">
+          <option value="dog">Time</option>
+          <option value="cat">Time</option>
+        </select>
+      </div>
+      <div class="frequency">
+        <label for="frequency">Período</label>
+        <select name="times" id="pet-select">
+          <option value="dog">Time</option>
+          <option value="cat">Time</option>
+        </select>
+      </div>
+
+      <label class="configure" for="frequency">Calibração dos sensores</label>
+      <div class="range">
+        <input type="range" />
+        <input type="range" />
+      </div>
+    </div>
+  </div>
+  <div class="tab-buttons-modal">
+    <app-button
+      btnText="Iniciar sessão"
+      btnClass="btn-primary-small"
+      [image]="false"
+      (click)="close()"></app-button>
+    <app-button
+      btnText="Voltar"
+      btnClass="btn-outline-small"
+      (click)="back()"
+      [image]="false"></app-button>
+  </div>
+</div>

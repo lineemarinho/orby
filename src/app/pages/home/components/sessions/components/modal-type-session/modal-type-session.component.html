@@ -1,0 +1,25 @@
+<div class="container-modal">
+  <div class="title-modal">Iniciar sessão</div>
+  <div class="subtitle-modal">
+    Considerando a condição clínica do paciente, escolha o tipo de
+    neuromodulação que deseja realizar:
+  </div>
+  <div class="options">
+    <input type="radio" id="html" name="fav_language" value="HTML" />
+    Reabilitação funcional<br />
+    <input type="radio" id="html" name="fav_language" value="HTML" /> Modulação
+    de dor
+  </div>
+  <div class="tab-buttons-modal">
+    <app-button
+      btnText="Continuar"
+      btnClass="btn-primary-small"
+      [image]="false"
+      (click)="startSession()"></app-button>
+    <app-button
+      btnText="Voltar"
+      btnClass="btn-outline-small"
+      (click)="back()"
+      [image]="false"></app-button>
+  </div>
+</div>

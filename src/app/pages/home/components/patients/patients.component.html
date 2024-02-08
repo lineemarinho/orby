@@ -7,8 +7,7 @@
     <input
       class="styleSearch"
       type="search"
-      placeholder="Pesquisar ou iniciar nova sessão..."
-    />
+      placeholder="Pesquisar ou iniciar nova sessão..." />
     <div class="search">
       <img class="search-icon" src="/assets/images/icons/search.svg" />
     </div>
@@ -19,8 +18,7 @@
       class="filter-item"
       *ngFor="let filter of filters"
       (click)="toggleFilter(filter)"
-      [class.active]="filter.active"
-    >
+      [class.active]="filter.active">
       <span
         class="dot"
         [ngClass]="{
