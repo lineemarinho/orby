@@ -96,6 +96,7 @@ body {
   cursor: pointer;
   @include bodyMedium;
   margin-bottom: 10px;
+  font-size: 24px;
   font-weight: bold;
   border-bottom: 2px solid $gray-lightest;
 }
@@ -108,5 +109,20 @@ body {
 .container-modal {
   margin: 20px;
   display: ruby-text;
+  box-sizing: border-box;
+}
+
+.tab-buttons-modal {
+  border-top: 1px solid #e6e6e6;
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row-reverse;
+  text-align: right;
+  gap: 5px;
+  position: absolute;
+  bottom: 0;
+  margin-left: -20px;
+  padding: 20px;
   box-sizing: border-box;
 }

@@ -1,0 +1,49 @@
+@import "/src/styles/base/variables.scss";
+
+.container-device {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.container-device-list {
+  width: 350px;
+}
+.list-sensors {
+  border-radius: 10px;
+  float: left;
+  width: 350px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: 1px solid $dark-color;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  li {
+    color: #000000;
+    padding: 13px 10px;
+    list-style: none;
+    border-top: 1px solid #000;
+  }
+}
+
+.styleSearch {
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0 10px 0 35px;
+  width: 100%;
+  &::placeholder {
+    color: #ada4a4;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}

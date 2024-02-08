@@ -5,10 +5,12 @@
     neuromodulação que deseja realizar:
   </div>
   <div class="options">
+    <input type="radio" id="html" name="fav_language" value="HTML" />
     Reabilitação funcional<br />
-    Modulação de dor
+    <input type="radio" id="html" name="fav_language" value="HTML" /> Modulação
+    de dor
   </div>
-  <div class="tab-buttons">
+  <div class="tab-buttons-modal">
     <app-button
       btnText="Continuar"
       btnClass="btn-primary-small"
@@ -16,8 +18,8 @@
       (click)="startSession()"></app-button>
     <app-button
       btnText="Voltar"
-      (click)="back()"
       btnClass="btn-outline-small"
+      (click)="back()"
       [image]="false"></app-button>
   </div>
 </div>

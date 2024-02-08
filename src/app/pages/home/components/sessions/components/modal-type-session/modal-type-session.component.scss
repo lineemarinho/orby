@@ -1,12 +1,1 @@
 @import "/src/styles/base/variables.scss";
-.tab-buttons {
-  border-top: 1px solid $gray-lightest;
-  width: 100%;
-  display: flex;
-  padding: 20px 0 0 0;
-  margin-bottom: 30px;
-  margin-top: 10px;
-  flex-direction: row-reverse;
-  text-align: right;
-  gap: 5px;
-}

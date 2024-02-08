@@ -1,0 +1,65 @@
+<div class="container-modal">
+  <div class="title-modal">Iniciar sessão</div>
+  <div class="subtitle-modal">
+    Em seguida, certifique-se de que os dispositivos estão ativos e faça a
+    seleção de acordo com a quantidade indicada:
+  </div>
+
+  <div class="container-device">
+    <div class="container-device-list">
+      0 de 2 sensores selecionados
+      <div class="list-sensors">
+        <ul>
+          <div class="search-container">
+            <input class="styleSearch" type="search" placeholder="Buscar" />
+            <div class="search">
+              <img
+                alt="search"
+                class="search-icon"
+                src="/assets/images/icons/search.svg" />
+            </div>
+          </div>
+          <li><span>•</span> IMU2F8837</li>
+          <li><span>•</span> IMU2F8837</li>
+          <li><span>•</span> IMU2F8837</li>
+          <li><span>•</span> IMU2F8837</li>
+          <li><span>•</span> IMU2F8837</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container-device-list">
+      0 de 4 neuromoduladores selecionados
+      <div class="list-sensors">
+        <ul>
+          <div class="search-container">
+            <input class="styleSearch" type="search" placeholder="Buscar" />
+            <div class="search">
+              <img
+                alt="search"
+                class="search-icon"
+                src="/assets/images/icons/search.svg" />
+            </div>
+          </div>
+          <li><span>•</span> IMU2F8837</li>
+          <li><span>•</span> IMU2F8837</li>
+          <li><span>•</span> IMU2F8837</li>
+          <li><span>•</span> IMU2F8837</li>
+          <li><span>•</span> IMU2F8837</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="tab-buttons-modal">
+    <app-button
+      btnText="Continuar"
+      btnClass="btn-primary-small"
+      [image]="false"
+      (click)="startSession()"></app-button>
+    <app-button
+      btnText="Voltar"
+      btnClass="btn-outline-small"
+      (click)="back()"
+      [image]="false"></app-button>
+  </div>
+</div>

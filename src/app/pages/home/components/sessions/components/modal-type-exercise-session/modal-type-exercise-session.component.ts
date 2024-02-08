@@ -10,7 +10,7 @@ export class ModalTypeExerciseSessionComponent {
   constructor(private modalSequence: ModalSequenceService) {}
 
   startSession() {
-    this.modalSequence.goTypeSession();
+    this.modalSequence.goTypeDevice();
   }
   back() {
     this.modalSequence.goTypeSession();
