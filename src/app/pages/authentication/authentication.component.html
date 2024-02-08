@@ -1,0 +1,28 @@
+<section id="login-register-container">
+  <div class="container">
+    <div class="logo"></div>
+    <div class="authentication">
+      <div class="tab-buttons">
+        <div
+          class="tab"
+          [class.active]="activeTab === 'login'"
+          (click)="setActiveTab('login')"
+        >
+          Entrar
+        </div>
+        <div
+          class="tab"
+          [class.active]="activeTab === 'register'"
+          (click)="setActiveTab('register')"
+        >
+          Criar Conta
+        </div>
+      </div>
+
+      <div class="tab-content">
+        <app-login *ngIf="activeTab === 'login'"></app-login>
+        <app-register *ngIf="activeTab === 'register'"></app-register>
+      </div>
+    </div>
+  </div>
+</section>

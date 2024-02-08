@@ -1,0 +1,55 @@
+<div class="form">
+  <app-input
+    type="text"
+    id="email"
+    name="email"
+    title="email"
+    placeholder="Nome"
+  >
+  </app-input>
+
+  <app-input
+    type="password"
+    id="password"
+    name="password"
+    title="password"
+    placeholder="Sobrenome"
+  >
+  </app-input>
+
+  <app-input
+    type="password"
+    id="password"
+    name="password"
+    title="password"
+    placeholder="E-mail"
+  >
+  </app-input>
+
+  <app-input
+    type="password"
+    id="password"
+    name="password"
+    title="password"
+    placeholder="Token"
+  >
+  </app-input>
+
+  <app-button
+    btnText="Continuar"
+    btnClass="btn-primary"
+    (btnClick)="save()"
+  ></app-button>
+
+  <div class="divider">
+    <span class="line"></span>
+    <span class="text">Ou continuar com</span>
+    <span class="line"></span>
+  </div>
+
+  <div class="tab-buttons">
+    <span *ngFor="let social of listNetwork" class="social-network">
+      <img [src]="social.img" [alt]="social.name" />
+    </span>
+  </div>
+</div>

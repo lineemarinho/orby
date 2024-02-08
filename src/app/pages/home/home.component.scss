@@ -1,0 +1,17 @@
+@import "/src/styles/base/variables.scss";
+
+#home-container {
+  width: 100%;
+  padding: 20px 0;
+  height: 100%;
+  float: left;
+  background-color: $gray-lightest;
+  .container-menu-patients {
+    width: 447px;
+    float: left;
+  }
+  .container-sessions {
+    width: 655px;
+    float: right;
+  }
+}

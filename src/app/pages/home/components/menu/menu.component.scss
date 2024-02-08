@@ -1,0 +1,32 @@
+@import "/src/styles/base/variables.scss";
+.container-menu {
+  background-color: $white-color;
+  border-radius: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+  .menu {
+    gap: 10px;
+
+    a,
+    button {
+      width: 100%;
+      padding: 13px 10px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      @include bodyMedium;
+      font-weight: bold;
+    }
+
+    .active-link {
+      border-radius: 10px;
+      background-color: $gray-lightest;
+    }
+  }
+  img {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: 0 15px 0 0;
+  }
+}

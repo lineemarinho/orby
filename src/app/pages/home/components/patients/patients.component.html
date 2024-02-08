@@ -1,0 +1,50 @@
+<div class="patients">
+  <div class="title">
+    <img src="/assets/images/icons/pacientes.svg" /> Pacientes
+  </div>
+
+  <div class="search-container">
+    <input
+      class="styleSearch"
+      type="search"
+      placeholder="Pesquisar ou iniciar nova sessão..."
+    />
+    <div class="search">
+      <img class="search-icon" src="/assets/images/icons/search.svg" />
+    </div>
+  </div>
+
+  <div class="filters">
+    <div
+      class="filter-item"
+      *ngFor="let filter of filters"
+      (click)="toggleFilter(filter)"
+      [class.active]="filter.active"
+    >
+      <span
+        class="dot"
+        [ngClass]="{
+          green: filter.name === 'Em sessão',
+          yellow: filter.name === 'Sessão pausada',
+          red: filter.name === 'Inativo'
+        }"
+        >•</span
+      >
+      {{ filter.name }}
+      <span *ngIf="filter.active">
+        <img src="/assets/images/icons/close.svg" />
+      </span>
+    </div>
+  </div>
+  <!-- <div class="no-patients">
+    <div class="title">Registre seu primeiro paciente</div>
+    <div class="subtitle">É fácil, nós te ajudamos.</div>
+
+    <app-button
+      btnText="Registrar paciente"
+      btnClass="btn-primary-small"
+      [image]="false"
+    ></app-button>
+  </div> -->
+  <app-card-patients></app-card-patients>
+</div>

@@ -1,0 +1,104 @@
+@import "/src/styles/base/variables.scss";
+.patients {
+  margin-top: 10px;
+  background-color: $white-color;
+  border-radius: 16px;
+  padding: 10px;
+  height: 777px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.title {
+  width: 100%;
+  padding: 13px 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  @include bodyMedium;
+  font-weight: bold;
+  > img {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: 0 15px 0 0;
+  }
+}
+
+.filters {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+
+  .filter-item {
+    cursor: pointer;
+    padding: 0 5px;
+    height: 32px;
+    border-radius: 4px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+
+    &.active {
+      background-color: $gray-lightest;
+      border: 1px solid $dark-color;
+    }
+
+    .dot {
+      font-size: 40px;
+      margin-top: -5px;
+      &.green {
+        color: $green;
+      }
+      &.yellow {
+        color: $yellow;
+      }
+      &.red {
+        color: $red;
+      }
+    }
+
+    &.active span:last-child {
+      visibility: visible;
+      img {
+        width: 10px;
+      }
+    }
+  }
+}
+.no-patients {
+  background-color: $gray-lightest;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+
+  > .title {
+    @include bodyMedium;
+    padding: 0;
+    font-weight: bold;
+  }
+  > .subtitle {
+    @include regularMedium;
+    margin-bottom: 10px;
+  }
+}
+
+button {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: $dark-color;
+  color: $white-color;
+  border: 2px solid $dark-color;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  height: 40px;
+}

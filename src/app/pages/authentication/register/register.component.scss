@@ -1,0 +1,49 @@
+@import "/src/styles/base/variables.scss";
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tab-buttons {
+  width: auto;
+  margin: 0 auto;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .social-network {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+    border: 1px solid $dark-color;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.divider {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: $dark-color;
+}
+
+.text {
+  white-space: nowrap;
+}

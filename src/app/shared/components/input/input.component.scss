@@ -1,0 +1,53 @@
+@import "/src/styles/base/variables.scss";
+input {
+  border: 0;
+  border-radius: 8px;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  background-color: $gray-lightest;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $gray-dark;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: blue;
+    box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.2);
+  }
+
+  &:hover {
+    border-color: darken(#ccc, 10%);
+  }
+
+  &:active {
+    border-color: darken(blue, 10%);
+  }
+
+  &:disabled {
+    background-color: $gray-lightest;
+    border-color: $gray-lightest;
+    color: $gray-lightest;
+  }
+}
+
+.input-outline {
+  border: 0;
+  border-radius: 8px;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  background-color: $gray-lightest;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}

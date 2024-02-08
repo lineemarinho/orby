@@ -1,0 +1,69 @@
+@import "/src/styles/base/variables.scss";
+.sessions {
+  background-color: $white-color;
+  border-radius: 16px;
+  padding: 20px;
+  height: 960px;
+  box-sizing: border-box;
+}
+.title {
+  @include bodyMedium;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 10px;
+}
+.subtitle {
+  @include bodyMedium;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.no-sessions {
+  width: 560px;
+  height: 560px;
+  border-radius: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $gray-lightest;
+  text-align: center;
+
+  img {
+    width: 68px;
+    margin-bottom: 20px;
+  }
+  > .title {
+    @include bodyMedium;
+    padding: 0;
+    font-weight: bold;
+  }
+  > .subtitle {
+    @include regularMedium;
+    margin-bottom: 10px;
+  }
+}
+
+.notification {
+  float: right;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.tab-buttons {
+  width: 410px;
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  flex-direction: row;
+  gap: 5px;
+}
+.container-session {
+  display: flex;
+  width: 560px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}

@@ -1,0 +1,33 @@
+$dark-color: #000000;
+$white-color: #ffffff;
+$gray-dark: #515151;
+$gray-lightest: #e6e6e6;
+$green: #00c614;
+$yellow: #ffe500;
+$red: #c60000;
+
+@mixin headlineBold {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin bodyMedium {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@mixin regularMedium {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
