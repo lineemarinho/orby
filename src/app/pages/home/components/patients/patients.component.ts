@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ModalSequenceService } from '../sessions/services/modal-sequence.service';
 
 @Component({
   selector: 'app-patients',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./patients.component.scss'],
 })
 export class PatientsComponent {
+  constructor(
+    private modalSequence: ModalSequenceService
+  ) {}
+  
   filters = [
     { name: 'Em sessão', active: false },
     { name: 'Sessão pausada', active: false },
@@ -22,4 +27,7 @@ export class PatientsComponent {
       selectedFilter.active = false;
     }
   }
+    openPatientRecord() {
+      this.modalSequence.goPatientRecord();
+    }
 }

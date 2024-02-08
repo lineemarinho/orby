@@ -3,6 +3,7 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { ModalGoSessionComponent } from '../components/modal-go-session/modal-go-session.component';
 import { ModalTypeSessionComponent } from '../components/modal-type-session/modal-type-session.component';
 import { ModalTypeExerciseSessionComponent } from '../components/modal-type-exercise-session/modal-type-exercise-session.component';
+import { ModalPatientRecordComponent } from '../../patients/components/modal-patient-record/modal-patient-record.component';
 
 @Injectable({
   providedIn: 'root',
@@ -45,5 +46,14 @@ export class ModalSequenceService {
 
   advance() {
     this.dialogRef!.close('advance');
+  }
+
+  goPatientRecord() {
+    this.dialogRef?.close();
+    this.dialogRef = this.dialog.open(ModalPatientRecordComponent, {
+      width: "800px",
+      height: "800px",
+    });
+    this.dialogRef.afterClosed().subscribe((result: any) => {});
   }
 }
