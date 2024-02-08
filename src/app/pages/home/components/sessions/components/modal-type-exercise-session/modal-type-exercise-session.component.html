@@ -1,1 +1,36 @@
-<p>modal-type-exercise-session works!</p>
+<div class="container-modal">
+  <div class="title-modal">Iniciar sessão</div>
+  <div class="subtitle-modal">
+    Na sequência, selecione o exercício pretendido:
+  </div>
+  <div class="search-container">
+    <input
+      class="styleSearch"
+      type="search"
+      placeholder="Pesquise seu paciente..." />
+    <div class="search">
+      <img
+        alt="search"
+        class="search-icon"
+        src="/assets/images/icons/search.svg" />
+    </div>
+  </div>
+  <div class="container-session">
+    <app-card-session></app-card-session>
+    <app-card-session></app-card-session>
+    <app-card-session></app-card-session>
+    <app-card-session></app-card-session>
+  </div>
+  <div class="tab-buttons">
+    <app-button
+      btnText="Continuar"
+      btnClass="btn-primary-small"
+      [image]="false"
+      (click)="startSession()"></app-button>
+    <app-button
+      btnText="Voltar"
+      btnClass="btn-outline-small"
+      (click)="back()"
+      [image]="false"></app-button>
+  </div>
+</div>

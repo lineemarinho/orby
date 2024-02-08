@@ -88,3 +88,25 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
+.title-modal {
+  width: 100%;
+  padding: 0 0 13px 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  @include bodyMedium;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-bottom: 2px solid $gray-lightest;
+}
+
+.subtitle-modal {
+  @include regularMedium;
+  margin-bottom: 10px;
+}
+
+.container-modal {
+  margin: 20px;
+  display: ruby-text;
+  box-sizing: border-box;
+}

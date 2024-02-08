@@ -1,20 +1,4 @@
 @import "/src/styles/base/variables.scss";
-.title {
-  width: 100%;
-  padding: 13px 0;
-  border: none;
-  background: none;
-  cursor: pointer;
-  @include bodyMedium;
-  margin-bottom: 10px;
-  font-weight: bold;
-  border-bottom: 2px solid $gray-lightest;
-}
-
-.subtitle {
-  @include regularMedium;
-  margin-bottom: 10px;
-}
 
 .list-patients {
   width: 100%;

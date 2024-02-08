@@ -1,18 +1,22 @@
-<div class="title">Iniciar sessão</div>
-<div class="subtitle">
-  Para iniciar a sessão, selecione o paciente desejado:
-</div>
-
-<div class="search-container">
-  <input
-    class="styleSearch"
-    type="search"
-    placeholder="Pesquise seu paciente..."
-  />
-  <div class="search">
-    <img class="search-icon" src="/assets/images/icons/search.svg" />
+<div class="container-modal">
+  <div class="title-modal">Iniciar sessão</div>
+  <div class="subtitle-modal">
+    Para iniciar a sessão, selecione o paciente desejado:
   </div>
-</div>
-<div class="list-patients">
-  <app-card-patients (click)="startSession()"></app-card-patients>
+
+  <div class="search-container">
+    <input
+      class="styleSearch"
+      type="search"
+      placeholder="Pesquise seu paciente..." />
+    <div class="search">
+      <img
+        alt="search"
+        class="search-icon"
+        src="/assets/images/icons/search.svg" />
+    </div>
+  </div>
+  <div class="list-patients">
+    <app-card-patients (click)="startSession()"></app-card-patients>
+  </div>
 </div>
