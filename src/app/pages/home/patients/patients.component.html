@@ -1,16 +1,18 @@
 <div class="patients">
   <div class="title">
-    <img alt="img" src="/assets/images/icons/pacientes.svg" /> Pacientes
+    <img alt="Ícone de pacientes" src="/assets/images/icons/pacientes.svg" />
+    Pacientes
   </div>
 
   <div class="search-container">
     <input
+      id="searchInput"
       class="styleSearch"
       type="search"
       placeholder="Pesquisar ou iniciar nova sessão..." />
     <div class="search">
       <img
-        alt="timg"
+        alt="Ícone de busca"
         class="search-icon"
         src="/assets/images/icons/search.svg" />
     </div>
@@ -33,7 +35,7 @@
       >
       {{ filter.name }}
       <span *ngIf="filter.active">
-        <img src="/assets/images/icons/close.svg" />
+        <img alt="Limpar filtro" src="/assets/images/icons/close.svg" />
       </span>
     </div>
   </div>

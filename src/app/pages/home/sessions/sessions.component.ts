@@ -12,16 +12,22 @@ import { ModalSequenceService } from "./services/modal-sequence.service";
 export class SessionsComponent {
   iconAdd = "assets/images/icons/add.svg";
   iconUser = "assets/images/icons/user.svg";
+
   constructor(
     public dialog: MatDialog,
     private modalSequence: ModalSequenceService
   ) {}
-
+  openNotification() {
+    this.modalSequence.goNotification();
+  }
   startSession() {
     this.modalSequence.goSession();
   }
 
   goRegister() {
     this.modalSequence.goRegister();
+  }
+  openProfile() {
+    this.modalSequence.goProfile();
   }
 }

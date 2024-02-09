@@ -9,6 +9,7 @@ input {
   background-color: $gray-lightest;
   transition: border-color 0.3s;
   box-sizing: border-box;
+  outline: none;
 
   &::placeholder {
     color: $gray-dark;

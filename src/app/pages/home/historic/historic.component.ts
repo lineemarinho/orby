@@ -6,8 +6,8 @@ import { Component } from "@angular/core";
   styleUrls: ["./historic.component.scss"],
 })
 export class HistoricComponent {
-  iconAdd = "assets/images/icons/iconAdd.png";
-  iconDate = "assets/images/icons/iconDate.png";
+  iconAdd = "assets/images/icons/iconAdd.svg";
+  iconDate = "assets/images/icons/iconDate.svg";
   back() {}
   close() {}
 }
