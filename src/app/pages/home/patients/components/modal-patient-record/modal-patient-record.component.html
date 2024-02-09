@@ -1,15 +1,46 @@
-<ul class="nav nav-tabs">
-  <li
-    class="nav-item"
-    *ngFor="let tab of tabsArray; let sr = index"
-    (click)="setTab(tab.id)">
-    <a class="nav-link" [ngClass]="activatedTab === tab.id ? 'active' : ''">{{
-      tab.name
-    }}</a>
-  </li>
-</ul>
+<div class="container-modal">
+  <div class="title">Ana Matos</div>
+  <div class="subtitle">Doença de Parkinson</div>
 
-<app-sheets *ngIf="activatedTab === 'sheets'"></app-sheets>
-<app-protocols *ngIf="activatedTab === 'protocols'"></app-protocols>
-<app-reports *ngIf="activatedTab === 'reports'"></app-reports>
-<app-sessions-list *ngIf="activatedTab === 'sessions'"></app-sessions-list>
+  <div class="tab-container">
+    <ul class="nav-tabs">
+      <li
+        class="tab"
+        [ngClass]="{ active: activatedTab === 'sheets' }"
+        (click)="setTab('sheets')">
+        Fichas de Anamnese
+      </li>
+      <li
+        class="tab"
+        [ngClass]="{ active: activatedTab === 'protocols' }"
+        (click)="setTab('protocols')">
+        Protocolos de Avaliação
+      </li>
+      <li
+        class="tab"
+        [ngClass]="{ active: activatedTab === 'sessions' }"
+        (click)="setTab('sessions')">
+        Sessões de Neuromodulação
+      </li>
+      <li
+        class="tab"
+        [ngClass]="{ active: activatedTab === 'reports' }"
+        (click)="setTab('reports')">
+        Relatórios
+      </li>
+    </ul>
+
+    <div *ngIf="activatedTab === 'sheets'" class="tab-content">
+      <app-sheets></app-sheets>
+    </div>
+    <div *ngIf="activatedTab === 'protocols'" class="tab-content">
+      <app-protocols></app-protocols>
+    </div>
+    <div *ngIf="activatedTab === 'reports'" class="tab-content">
+      <app-reports></app-reports>
+    </div>
+    <div *ngIf="activatedTab === 'sessions'" class="tab-content">
+      <app-sessions-list></app-sessions-list>
+    </div>
+  </div>
+</div>

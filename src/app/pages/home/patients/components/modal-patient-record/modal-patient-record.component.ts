@@ -22,7 +22,7 @@ export class ModalPatientRecordComponent {
 
   ngOnInit(): void {}
 
-  setTab(tabId: string) {
+  setTab(tabId: string): void {
     this.activatedTab = tabId;
   }
 }

@@ -1,1 +1,60 @@
-<p>reports works!</p>
+<div class="table-container">
+  <div class="table-header">
+    <div class="header-item">Título</div>
+    <div class="header-item data">Data</div>
+  </div>
+  <div class="table-row">
+    <div class="row-item">
+      <img
+        alt="add information"
+        (click)="openItem()"
+        class="addInfo"
+        src="/assets/images/icons/addInfo.svg" />
+      <img
+        (click)="openItem()"
+        class="addInfo"
+        src="/assets/images/icons/download.svg"
+        alt="Icone notificação" />
+      Avaliação (Anamnese 1)
+    </div>
+    <div class="row-item data">
+      27 de maio de 2023
+      <div (click)="openItem()" class="action-arrow">
+        <img alt="expand details" src="/assets/images/icons/arrow.svg" />
+      </div>
+    </div>
+  </div>
+  <!-- <div class="detail" *ngIf="detail">
+    <b>
+      Parte I: Aspectos Não Motores das Experiências da Vida Diária (nM-EVD)
+    </b>
+    <div class="line"></div>
+    <b>Parte 1A: Comportamentos complexos</b>
+
+    <div class="subtitle">Fonte primária da informação:</div>
+    <div class="radio">
+      <input
+        type="radio"
+        id="reabilitacao"
+        placeholder="reabilitacao"
+        name="fav_language"
+        value="Reabilitação funcional" />
+      <label for="reabilitacao">Paciente</label>
+    </div>
+    <b> 1.1 Disfunção cognitiva </b>
+    <div class="subtitle">
+      Durante a última semana, teve dificuldade em lembrar-se de coisas,
+      acompanhar conversas, prestar atenção, pensar claramente ou em orientar-se
+      em casa ou na cidade? Se sim, peça ao paciente ou cuidador para
+      especificar.
+    </div>
+
+    <div>
+      <select id="genero" name="genero">
+        <option value="masculino">0: Normal: Sem disfunção cognitiva.</option>
+      </select>
+    </div>
+
+    <b> 1.2 Alucinações e Psicose </b>
+  </div> -->
+</div>
