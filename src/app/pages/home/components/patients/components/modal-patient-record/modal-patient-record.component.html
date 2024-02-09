@@ -1,5 +1,15 @@
 <ul class="nav nav-tabs">
-  <li class="nav-item"  *ngFor="let tab of tabsArray; let sr = index" (click)="setTab(sr)">
-    <a class="nav-link " [ngClass]="activatedTab == sr ? 'active': ''" >{{tab}}</a>
+  <li
+    class="nav-item"
+    *ngFor="let tab of tabsArray; let sr = index"
+    (click)="setTab(tab.id)">
+    <a class="nav-link" [ngClass]="activatedTab === tab.id ? 'active' : ''">{{
+      tab.name
+    }}</a>
   </li>
 </ul>
+
+<app-sheets *ngIf="activatedTab === 'sheets'"></app-sheets>
+<app-protocols *ngIf="activatedTab === 'protocols'"></app-protocols>
+<app-reports *ngIf="activatedTab === 'reports'"></app-reports>
+<app-sessions-list *ngIf="activatedTab === 'sessions'"></app-sessions-list>

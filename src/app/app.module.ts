@@ -24,6 +24,10 @@ import { ModalPatientRecordComponent } from './pages/home/components/patients/co
 import { ModalSelectDeviceComponent } from './pages/home/components/sessions/components/modal-select-device/modal-select-device.component';
 import { ModalParameterSettingComponent } from './pages/home/components/sessions/components/modal-parameter-setting/modal-parameter-setting.component';
 import { ModalCardNamneseComponent } from './pages/home/components/patients/components/modal-patient-record/components/modal-card-namnese/modal-card-namnese.component';
+import { SheetsComponent } from './pages/home/components/patients/components/modal-patient-record/components/sheets/sheets.component';
+import { ProtocolsComponent } from './pages/home/components/patients/components/modal-patient-record/components/protocols/protocols.component';
+import { ReportsComponent } from './pages/home/components/patients/components/modal-patient-record/components/reports/reports.component';
+import { SessionsListComponent } from './pages/home/components/patients/components/modal-patient-record/components/sessions-list/sessions-list.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +52,10 @@ import { ModalCardNamneseComponent } from './pages/home/components/patients/comp
     ModalSelectDeviceComponent,
     ModalParameterSettingComponent,
     ModalCardNamneseComponent,
+    SheetsComponent,
+    ProtocolsComponent,
+    ReportsComponent,
+    SessionsListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatDialogModule],
   providers: [],
