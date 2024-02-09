@@ -1,0 +1,62 @@
+@import "/src/styles/base/variables.scss";
+.tab-buttons-actions {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row-reverse;
+  text-align: right;
+  gap: 5px;
+  bottom: 0;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.time {
+  float: left;
+  display: flex;
+  border-radius: 10px;
+  padding: 20px;
+  width: 360px;
+  box-sizing: border-box;
+  border: 1px solid $dark-color;
+}
+
+.graphic {
+  float: left;
+  display: flex;
+  border-radius: 10px;
+  padding: 20px;
+  width: 745px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  margin-top: 30px;
+}
+
+.image {
+  float: right;
+  margin-left: 50px;
+  margin-top: 59px;
+  img {
+    width: 100%;
+  }
+}
+
+.container-time {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.title {
+  @include bodyMedium;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.subtitle {
+  @include regularMedium;
+  margin-top: 10px;
+}

@@ -6,6 +6,9 @@ import { ModalTypeExerciseSessionComponent } from "../components/modal-type-exer
 import { ModalSelectDeviceComponent } from "../components/modal-select-device/modal-select-device.component";
 import { ModalParameterSettingComponent } from "../components/modal-parameter-setting/modal-parameter-setting.component";
 import { ModalPatientRecordComponent } from "../../patients/components/modal-patient-record/modal-patient-record.component";
+import { RegisterPatientComponent } from "../components/register-patient/register-patient.component";
+import { HistoricComponent } from "../../historic/historic.component";
+import { DashboardComponent } from "../../dashboard/dashboard.component";
 
 @Injectable({
   providedIn: "root",
@@ -78,6 +81,32 @@ export class ModalSequenceService {
   goPatientRecord() {
     this.dialogRef?.close();
     this.dialogRef = this.dialog.open(ModalPatientRecordComponent, {
+      width: "800px",
+      height: "800px",
+    });
+    this.dialogRef.afterClosed().subscribe((result: any) => {});
+  }
+  goRegister() {
+    this.dialogRef?.close();
+    this.dialogRef = this.dialog.open(RegisterPatientComponent, {
+      width: "800px",
+      height: "800px",
+    });
+    this.dialogRef.afterClosed().subscribe((result: any) => {});
+  }
+
+  goDashboard() {
+    this.dialogRef?.close();
+    this.dialogRef = this.dialog.open(DashboardComponent, {
+      width: "800px",
+      height: "800px",
+    });
+    this.dialogRef.afterClosed().subscribe((result: any) => {});
+  }
+
+  goHistoric() {
+    this.dialogRef?.close();
+    this.dialogRef = this.dialog.open(HistoricComponent, {
       width: "800px",
       height: "800px",
     });
