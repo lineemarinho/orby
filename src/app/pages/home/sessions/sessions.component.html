@@ -1,0 +1,42 @@
+<div class="sessions">
+  <div class="title">
+    Olá, Fernanda!
+
+    <div class="notification">
+      <img alt="patients" src="/assets/images/icons/notification.svg" />
+      <div>
+        <img alt="patients" src="/assets/images/icons/orby.svg" />
+        <img
+          alt="patients"
+          style="margin-top: 10px; margin-left: 10px; float: right"
+          src="/assets/images/icons/arrow.svg" />
+      </div>
+    </div>
+  </div>
+  <div class="subtitle">Vamos organizar suas sessões diárias.</div>
+
+  <div class="tab-buttons">
+    <app-button
+      btnText="Iniciar sessão"
+      btnClass="btn-primary-small"
+      [image]="true"
+      [src]="iconAdd"
+      (click)="startSession()"></app-button>
+
+    <app-button
+      btnText="Registrar paciente"
+      btnClass="btn-outline-small"
+      [image]="true"
+      [src]="iconUser"
+      (click)="goRegister()"></app-button>
+  </div>
+  <div class="container-session">
+    <app-card-session></app-card-session><app-card-session></app-card-session
+    ><app-card-session></app-card-session><app-card-session></app-card-session>
+  </div>
+  <!-- <div class="no-sessions">
+    <img alt="patients" src="/assets/images/icons/add-patients.svg" />
+    <div class="title">Arraste e solte um paciente aqui</div>
+    <div class="subtitle">ou use o botão “Iniciar Sessão”.</div>
+  </div> -->
+</div>
