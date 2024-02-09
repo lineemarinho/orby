@@ -1,0 +1,15 @@
+@import "/src/styles/base/variables.scss";
+label {
+  @include bodyMedium;
+  margin: 10px 0 10px 0;
+  font-weight: bold;
+  display: block;
+}
+
+.subtitle-modal {
+  font-size: 16px !important;
+}
+
+.tab-buttons-modal {
+  border: 0 !important;
+}

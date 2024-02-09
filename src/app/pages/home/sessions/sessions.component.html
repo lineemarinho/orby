@@ -3,8 +3,11 @@
     Olá, Fernanda!
 
     <div class="notification">
-      <img alt="patients" src="/assets/images/icons/notification.svg" />
-      <div>
+      <img
+        alt="patients"
+        (click)="openNotification()"
+        src="/assets/images/icons/notification.svg" />
+      <div (click)="openProfile()">
         <img alt="patients" src="/assets/images/icons/orby.svg" />
         <img
           alt="patients"
@@ -31,8 +34,9 @@
       (click)="goRegister()"></app-button>
   </div>
   <div class="container-session">
-    <app-card-session></app-card-session><app-card-session></app-card-session
-    ><app-card-session></app-card-session><app-card-session></app-card-session>
+    <app-card-session btnClass="btnClass"></app-card-session
+    ><app-card-session></app-card-session><app-card-session></app-card-session
+    ><app-card-session></app-card-session>
   </div>
   <!-- <div class="no-sessions">
     <img alt="patients" src="/assets/images/icons/add-patients.svg" />

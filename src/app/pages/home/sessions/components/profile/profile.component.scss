@@ -1,0 +1,59 @@
+@import "/src/styles/base/variables.scss";
+
+.edit-profile {
+  border-radius: 10px;
+  border: 1px solid $dark-color;
+  text-align: center !important;
+  display: flex;
+  width: 198px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 auto;
+  height: 40px;
+  line-height: 36px !important;
+  @include bodyMedium;
+  margin: 20px auto;
+  font-weight: bold;
+  > img {
+    width: 16px;
+  }
+}
+
+.name {
+  @include bodyMedium;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  display: grid;
+  padding: 20px 0 0 0;
+  > img {
+    margin-bottom: 15px;
+    margin-left: 100px;
+    width: 80px;
+  }
+}
+
+.email {
+  @include regularMedium;
+  font-size: 12px;
+  text-align: center;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  @include regularMedium;
+  text-align: left;
+  list-style: none;
+  box-sizing: border-box;
+  border-top: 1px solid $gray-lightest;
+  display: flex;
+  padding: 20px;
+  > img {
+    margin-right: 10px;
+  }
+}

@@ -28,6 +28,10 @@ import { ProtocolsComponent } from "./pages/home/patients/components/protocols/p
 import { SheetsComponent } from "./pages/home/patients/components/sheets/sheets.component";
 import { ReportsComponent } from "./pages/home/patients/components/reports/reports.component";
 import { SessionsListComponent } from "./pages/home/patients/components/sessions-list/sessions-list.component";
+import { NotificationComponent } from './pages/home/sessions/components/notification/notification.component';
+import { ProfileComponent } from './pages/home/sessions/components/profile/profile.component';
+import { EditProfileComponent } from './pages/home/sessions/components/edit-profile/edit-profile.component';
+import { FeedbackComponent } from './pages/home/sessions/components/feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +60,10 @@ import { SessionsListComponent } from "./pages/home/patients/components/sessions
     SheetsComponent,
     ReportsComponent,
     SessionsListComponent,
+    NotificationComponent,
+    ProfileComponent,
+    EditProfileComponent,
+    FeedbackComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatDialogModule],
   providers: [],
