@@ -1,0 +1,37 @@
+.sessions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessions {
+  width: 736px;
+  height: 648px;
+}
+
+.header-text {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.screen-container {
+  text-align: center;
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+.screen {
+  display: block;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  text-align: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.screen p, h1 {
+  margin-left: 20px;
+}
