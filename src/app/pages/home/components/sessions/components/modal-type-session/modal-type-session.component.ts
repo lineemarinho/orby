@@ -7,10 +7,10 @@ import { ModalSequenceService } from "../../services/modal-sequence.service";
   styleUrls: ["./modal-type-session.component.scss"],
 })
 export class ModalTypeSessionComponent {
-  activeTab: string = 'anamnese';
+  constructor(private modalSequence: ModalSequenceService) {}
 
-  setActiveTab(tabName: string): void {
-    this.activeTab = tabName;
+  startSession() {
+    this.modalSequence.goTypeExercise();
   }
   back() {
     this.modalSequence.goSession();

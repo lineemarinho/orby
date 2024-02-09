@@ -23,6 +23,7 @@ import { ModalTypeExerciseSessionComponent } from './pages/home/components/sessi
 import { ModalPatientRecordComponent } from './pages/home/components/patients/components/modal-patient-record/modal-patient-record.component';
 import { ModalSelectDeviceComponent } from './pages/home/components/sessions/components/modal-select-device/modal-select-device.component';
 import { ModalParameterSettingComponent } from './pages/home/components/sessions/components/modal-parameter-setting/modal-parameter-setting.component';
+import { ModalCardNamneseComponent } from './pages/home/components/patients/components/modal-patient-record/components/modal-card-namnese/modal-card-namnese.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { ModalParameterSettingComponent } from './pages/home/components/sessions
     ModalPatientRecordComponent,
     ModalSelectDeviceComponent,
     ModalParameterSettingComponent,
+    ModalCardNamneseComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatDialogModule],
   providers: [],
