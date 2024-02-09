@@ -1,0 +1,60 @@
+<div class="container-modal">
+  <div class="title-modal">Dashboard</div>
+  <div class="subtitle-modal">Vamos organizar seus indicadores.</div>
+  <div class="search-container">
+    <input
+      class="styleSearch"
+      type="search"
+      placeholder="Pesquise seu paciente..." />
+    <div class="search">
+      <img
+        alt="search"
+        class="search-icon"
+        src="/assets/images/icons/search.svg" />
+    </div>
+  </div>
+
+  <div class="tab-buttons-actions">
+    <app-button
+      btnText="Adicionar indicador"
+      btnClass="btn-outline-small"
+      (click)="back()"
+      [src]="iconAdd"
+      [image]="true"></app-button
+    ><app-button
+      btnText="Por data"
+      btnClass="btn-primary-small"
+      [image]="true"
+      [src]="iconDate"
+      (click)="close()"></app-button>
+  </div>
+
+  <div class="container-time">
+    <div class="time">
+      <div>
+        <div class="title">Nº de patologias em atuação</div>
+        <div class="subtitle">3 patologias</div>
+      </div>
+      <div class="image">
+        <img alt="search" src="/assets/images/icons/iconPat.svg" />
+      </div>
+    </div>
+    <div class="time">
+      <div>
+        <div class="title">Tempo médio de atendimento</div>
+        <div class="subtitle">45 minutos</div>
+      </div>
+      <div class="image">
+        <img alt="search" src="/assets/images/icons/iconTime.svg" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container-time">
+    <div class="graphic">
+      <div>
+        <div class="title">Total de Pacientes</div>
+      </div>
+    </div>
+  </div>
+</div>
