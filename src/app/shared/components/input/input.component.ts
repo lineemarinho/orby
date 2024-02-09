@@ -12,4 +12,5 @@ export class InputComponent {
   @Input() name: string = '';
   @Input() title: string = '';
   @Input() placeholder: string = '';
+  @Input() btnClass: string = '';
 }

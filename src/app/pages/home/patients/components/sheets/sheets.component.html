@@ -1,33 +1,37 @@
-<div class="namnese-container">
-  <div class="header">
-    <div class="title">Ana matos1</div>
-    <div class="subtitle">Doença de Parkinson</div>
+<div class="forms-container">
+  <div class="nome-completo">
+    <label for="nome">Nome Completo</label>
+    <app-input
+      btnClass="style-secondy-input"
+      type="text"
+      id="nome"
+      name="nome"
+      title="nome"
+      placeholder="Nome Completo">
+    </app-input>
   </div>
 
-  <div class="forms-container">
-    <div>
-      <label for="nome">Nome Completo</label>
+  <div class="dual-container">
+    <div class="wrapper">
+      <label for="nome">Data de nascimento</label>
       <app-input
-        type="text"
-        id="nome"
-        name="nome"
-        title="nome"
-        placeholder="Nome Completo">
+        btnClass="style-secondy-input"
+        type="date"
+        name="selectedDate">
       </app-input>
     </div>
-
-    <div>
-      <label for="nome">Data de nascimento</label>
-      <input type="date" name="selectedDate" />
+  
+    <div class="wrapper">
+      <label for="genero">Gênero:</label>
+      <app-input
+        id="genero"
+        name="genero"
+        placeholder="Feminino"
+        btnClass="style-secondy-input">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+      </app-input>
     </div>
-  </div>
-
-  <div>
-    <label for="genero">Gênero:</label>
-    <select id="genero" name="genero">
-      <option value="masculino">Masculino</option>
-      <option value="feminino">Feminino</option>
-    </select>
   </div>
 
   <div>
@@ -54,12 +58,17 @@
     </app-input>
   </div>
 
-  <div>
+  <div class="dual-container">
+  <div class="wrapper">
     <label for="nome">Data de nascimento</label>
-    <input type="date" name="selectedDate" />
+    <app-input
+      type="date"
+      name="selectedDate"
+      btnClass="style-secondy-input">
+    </app-input>
   </div>
 
-  <div>
+  <div class="wrapper">
     <label for="especifica">Lesão específica</label>
     <app-input
       type="text"
@@ -69,4 +78,5 @@
       placeholder="Lesão específica">
     </app-input>
   </div>
+</div>
 </div>
