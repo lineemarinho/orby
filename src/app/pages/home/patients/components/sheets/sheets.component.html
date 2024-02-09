@@ -1,80 +1,101 @@
-<div class="forms-container">
-  <div class="nome-completo">
-    <label for="nome">Nome Completo</label>
-    <app-input
-      btnClass="style-secondy-input"
-      type="text"
-      id="nome"
-      name="nome"
-      title="nome"
-      placeholder="Nome Completo">
-    </app-input>
-  </div>
-
-  <div class="dual-container">
-    <div class="wrapper">
-      <label for="nome">Data de nascimento</label>
-      <app-input btnClass="style-secondy-input" type="date" name="selectedDate">
-      </app-input>
+<div class="table-container">
+  <div class="table-header">
+    <div class="header-item">Título</div>
+    <div class="header-item">Data</div>
+    <div class="header-item action-icon">
+      <img alt="add information" src="/assets/images/icons/addInfo.svg" />
     </div>
-
-    <div class="wrapper">
-      <label for="genero">Gênero:</label>
+  </div>
+  <div class="table-row">
+    <div class="row-item">Avaliação (Anamnese 1)</div>
+    <div class="row-item">27 de maio de 2023</div>
+    <div (click)="openItem()" class="row-item action-icon">
+      <img alt="expand details" src="/assets/images/icons/arrow.svg" />
+    </div>
+  </div>
+  <div class="detail" *ngIf="detail">
+    <div class="container-input">
+      <label for="nome">Nome Completo</label>
       <app-input
-        id="genero"
-        name="genero"
-        placeholder="Feminino"
-        btnClass="style-secondy-input">
-        <option value="masculino">Masculino</option>
-        <option value="feminino">Feminino</option>
+        btnClass="style-secondy-input"
+        type="text"
+        id="nome"
+        name="nome"
+        title="nome"
+        placeholder="Nome Completo">
       </app-input>
     </div>
-  </div>
 
-  <div>
-    <label for="diagnostico">Diagnóstico clínico</label>
-    <app-input
-      type="text"
-      id="diagnostico"
-      name="diagnostico"
-      title="diagnostico"
-      placeholder="Diagnóstico clínico">
-    </app-input>
-  </div>
+    <div class="dual-container">
+      <div class="wrapper">
+        <label for="nome">Data de nascimento</label>
+        <app-input
+          btnClass="style-secondy-input"
+          type="date"
+          name="selectedDate">
+        </app-input>
+      </div>
 
-  <hr />
-
-  <div>
-    <label for="Sintomas">Sintomas</label>
-    <app-input
-      type="text"
-      id="sintomas"
-      name="sintomas"
-      title="sintomas"
-      placeholder="Mobilidade reduzida">
-    </app-input>
-  </div>
-
-  <div class="dual-container">
-    <div class="wrapper">
-      <label for="nome">Data de nascimento</label>
-      <<<<<<< HEAD
-      <app-input type="date" name="selectedDate" btnClass="style-secondy-input">
-      </app-input>
-      =======
-      <input placeholder="Data de nascimento" type="date" name="selectedDate" />
-      >>>>>>> main
+      <div class="wrapper">
+        <label for="genero">Gênero:</label>
+        <app-input
+          id="genero"
+          name="genero"
+          placeholder="Feminino"
+          btnClass="style-secondy-input">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </app-input>
+      </div>
     </div>
 
-    <div class="wrapper">
-      <label for="especifica">Lesão específica</label>
+    <div class="container-input">
+      <label for="diagnostico">Diagnóstico clínico</label>
       <app-input
         type="text"
-        id="especifica"
-        name="especifica"
-        title="especifica"
-        placeholder="Lesão específica">
+        id="diagnostico"
+        name="diagnostico"
+        title="diagnostico"
+        btnClass="style-secondy-input"
+        placeholder="Diagnóstico clínico">
       </app-input>
+    </div>
+
+    <div class="container-input">
+      <label for="Sintomas">Sintomas</label>
+      <app-input
+        type="text"
+        id="sintomas"
+        btnClass="style-secondy-input"
+        name="sintomas"
+        title="sintomas"
+        placeholder="Mobilidade reduzida">
+      </app-input>
+    </div>
+
+    <div class="dual-container">
+      <div class="wrapper">
+        <label for="nome">Data de nascimento</label>
+
+        <app-input
+          type="date"
+          btnClass="style-secondy-input"
+          name="selectedDate"
+          btnClass="style-secondy-input">
+        </app-input>
+      </div>
+
+      <div class="wrapper">
+        <label for="especifica">Lesão específica</label>
+        <app-input
+          type="text"
+          id="especifica"
+          name="especifica"
+          btnClass="style-secondy-input"
+          title="especifica"
+          placeholder="Lesão específica">
+        </app-input>
+      </div>
     </div>
   </div>
 </div>

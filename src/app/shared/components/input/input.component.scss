@@ -5,6 +5,7 @@ input {
   height: 64px;
   width: 100%;
   display: flex;
+  outline: none;
   padding: 0 20px;
   background-color: $gray-lightest;
   transition: border-color 0.3s;
@@ -46,6 +47,7 @@ input {
   border-radius: 8px;
   height: 64px;
   width: 100%;
+  outline: none;
   display: flex;
   padding: 0 20px;
   background-color: $gray-lightest;
@@ -54,5 +56,8 @@ input {
 }
 
 .style-secondy-input {
-  border: 2px #000000;
+  border: 1px solid $dark-color;
+  outline: none;
+  height: 40px;
+  background-color: white;
 }
