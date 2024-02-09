@@ -6,8 +6,8 @@ import { Component } from "@angular/core";
   styleUrls: ["./dashboard.component.scss"],
 })
 export class DashboardComponent {
-  iconAdd = "assets/images/icons/iconAdd.png";
-  iconDate = "assets/images/icons/iconDate.png";
+  iconAdd = "assets/images/icons/iconAdd.svg";
+  iconDate = "assets/images/icons/iconDate.svg";
   close() {}
   back() {}
 }
