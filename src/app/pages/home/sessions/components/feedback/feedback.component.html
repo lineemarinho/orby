@@ -1,0 +1,39 @@
+<div class="container-modal">
+  <div class="title-modal">
+    <img alt="patients" src="/assets/images/icons/feedback.svg" /> Dar feedback
+  </div>
+
+  <b>Escreva seu feedback</b>
+
+  <textarea name="message" id="message">Enter text here...</textarea>
+
+  <b
+    >Com base em sua experiência, qual é a probabilidade de você recomendar
+    nosso sistema a um amigo ou colega?
+  </b>
+  <div class="numbers-container">
+    <div class="number">0</div>
+    <div class="number">1</div>
+    <div class="number">2</div>
+    <div class="number">3</div>
+    <div class="number">4</div>
+    <div class="number">5</div>
+    <div class="number">6</div>
+    <div class="number">7</div>
+    <div class="number">8</div>
+    <div class="number">9</div>
+    <div class="number">10</div>
+  </div>
+
+  <div class="variable">
+    <div class="left">Nada provável</div>
+    <div class="right">Extremamente provável</div>
+  </div>
+
+  <div class="tab-buttons-modal">
+    <app-button
+      btnText="Enviar feedback"
+      btnClass="btn-primary-small"
+      [image]="false"></app-button>
+  </div>
+</div>

@@ -4,8 +4,7 @@
     id="email"
     name="email"
     title="email"
-    placeholder="Nome"
-  >
+    placeholder="Nome">
   </app-input>
 
   <app-input
@@ -13,8 +12,7 @@
     id="password"
     name="password"
     title="password"
-    placeholder="Sobrenome"
-  >
+    placeholder="Sobrenome">
   </app-input>
 
   <app-input
@@ -22,8 +20,7 @@
     id="password"
     name="password"
     title="password"
-    placeholder="E-mail"
-  >
+    placeholder="E-mail">
   </app-input>
 
   <app-input
@@ -31,15 +28,13 @@
     id="password"
     name="password"
     title="password"
-    placeholder="Token"
-  >
+    placeholder="Token">
   </app-input>
 
   <app-button
     btnText="Continuar"
     btnClass="btn-primary"
-    (btnClick)="save()"
-  ></app-button>
+    (btnClick)="save()"></app-button>
 
   <div class="divider">
     <span class="line"></span>
@@ -49,7 +44,7 @@
 
   <div class="tab-buttons">
     <span *ngFor="let social of listNetwork" class="social-network">
-      <img [src]="social.img" [alt]="social.name" />
+      <img alt="image" [src]="social.img" [alt]="social.name" />
     </span>
   </div>
 </div>

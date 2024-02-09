@@ -9,6 +9,10 @@ import { ModalPatientRecordComponent } from "../../patients/components/modal-pat
 import { RegisterPatientComponent } from "../components/register-patient/register-patient.component";
 import { HistoricComponent } from "../../historic/historic.component";
 import { DashboardComponent } from "../../dashboard/dashboard.component";
+import { NotificationComponent } from "../components/notification/notification.component";
+import { ProfileComponent } from "../components/profile/profile.component";
+import { EditProfileComponent } from "../components/edit-profile/edit-profile.component";
+import { FeedbackComponent } from "../components/feedback/feedback.component";
 
 @Injectable({
   providedIn: "root",
@@ -109,6 +113,40 @@ export class ModalSequenceService {
     this.dialogRef = this.dialog.open(HistoricComponent, {
       width: "800px",
       height: "800px",
+    });
+    this.dialogRef.afterClosed().subscribe((result: any) => {});
+  }
+
+  goNotification() {
+    this.dialogRef?.close();
+    this.dialogRef = this.dialog.open(NotificationComponent, {
+      width: "334px",
+      height: "441px",
+    });
+    this.dialogRef.afterClosed().subscribe((result: any) => {});
+  }
+  goProfile() {
+    this.dialogRef?.close();
+    this.dialogRef = this.dialog.open(ProfileComponent, {
+      width: "300px",
+      height: "377px",
+    });
+    this.dialogRef.afterClosed().subscribe((result: any) => {});
+  }
+  goEditProfile() {
+    this.dialogRef?.close();
+    this.dialogRef = this.dialog.open(EditProfileComponent, {
+      width: "500px",
+      height: "696px",
+    });
+    this.dialogRef.afterClosed().subscribe((result: any) => {});
+  }
+
+  goFeedback() {
+    this.dialogRef?.close();
+    this.dialogRef = this.dialog.open(FeedbackComponent, {
+      width: "400px",
+      height: "426px",
     });
     this.dialogRef.afterClosed().subscribe((result: any) => {});
   }

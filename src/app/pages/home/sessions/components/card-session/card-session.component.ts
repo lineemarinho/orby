@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-card-session',
-  templateUrl: './card-session.component.html',
-  styleUrls: ['./card-session.component.scss']
+  selector: "app-card-session",
+  templateUrl: "./card-session.component.html",
+  styleUrls: ["./card-session.component.scss"],
 })
 export class CardSessionComponent {
-
+  @Input() btnClass: string = "";
 }
