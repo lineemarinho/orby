@@ -24,6 +24,10 @@ import { ModalParameterSettingComponent } from "./pages/home/sessions/components
 import { RegisterPatientComponent } from "./pages/home/sessions/components/register-patient/register-patient.component";
 import { HistoricComponent } from "./pages/home/historic/historic.component";
 import { DashboardComponent } from "./pages/home/dashboard/dashboard.component";
+import { ProtocolsComponent } from "./pages/home/patients/components/protocols/protocols.component";
+import { SheetsComponent } from "./pages/home/patients/components/sheets/sheets.component";
+import { ReportsComponent } from "./pages/home/patients/components/reports/reports.component";
+import { SessionsListComponent } from "./pages/home/patients/components/sessions-list/sessions-list.component";
 
 @NgModule({
   declarations: [
@@ -48,6 +52,10 @@ import { DashboardComponent } from "./pages/home/dashboard/dashboard.component";
     ModalSelectDeviceComponent,
     ModalParameterSettingComponent,
     RegisterPatientComponent,
+    ProtocolsComponent,
+    SheetsComponent,
+    ReportsComponent,
+    SessionsListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatDialogModule],
   providers: [],
