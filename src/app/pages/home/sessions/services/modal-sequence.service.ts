@@ -121,7 +121,7 @@ export class ModalSequenceService {
   goNotification() {
     this.dialogRef?.close();
     this.dialogRef = this.dialog.open(NotificationComponent, {
-      width: "334px",
+      width: "350px",
       height: "441px",
     });
     this.dialogRef.afterClosed().subscribe((result: any) => {});
