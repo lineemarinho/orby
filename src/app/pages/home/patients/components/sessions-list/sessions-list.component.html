@@ -1,22 +1,19 @@
-<div class="sessions-container">
-  <div class="sessions">
-    <div class="header-text">
-      <p>Sessão 1</p>
-      <p>27 de maio de 2023</p>
+<div class="table-container">
+  <div class="table-header">
+    <div class="header-item">Título</div>
+    <div class="header-item">Data</div>
+    <div class="header-item action-icon">
+      <img alt="add information" src="/assets/images/icons/addInfo.svg" />
     </div>
-
-    <details>
-      <summary></summary>
-    <div class="screen-container">
-      <div class="screen">
-        <h1>Extensão do Quadril</h1>
-        <p>Com resistencia</p>
-        <p>Inicio da sessão: 8:30</p>
-        <p>Fim da sessão: 9:15</p>
-        <p>00:45:00</p>
-      </div>
+  </div>
+  <div class="table-row">
+    <div class="row-item">Sessão 1</div>
+    <div class="row-item">27 de maio de 2023</div>
+    <div (click)="openItem()" class="row-item action-icon">
+      <img alt="expand details" src="/assets/images/icons/arrow.svg" />
     </div>
-    </details>
-
+  </div>
+  <div class="detail" *ngIf="detail">
+    <app-card-session-history></app-card-session-history>
   </div>
 </div>

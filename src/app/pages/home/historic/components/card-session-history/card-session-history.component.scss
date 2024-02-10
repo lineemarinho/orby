@@ -1,0 +1,42 @@
+@import "/src/styles/base/variables.scss";
+.time {
+  float: left;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border: 1px solid $dark-color;
+}
+
+.description {
+  float: left;
+  margin: 0 0 0 20px;
+  max-width: 530px;
+}
+
+.image {
+  width: 168px;
+  float: left;
+  height: 112px;
+  overflow: hidden;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.expand {
+  float: right;
+  margin-top: 95px;
+}
+.title {
+  @include bodyMedium;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.subtitle {
+  @include regularMedium;
+  margin-top: 0;
+}

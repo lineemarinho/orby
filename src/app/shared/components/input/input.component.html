@@ -1,7 +1,18 @@
-<input
-  [type]="type"
-  [id]="id"
-  [name]="name"
-  [title]="title"
-  [placeholder]="placeholder"
-  [ngClass]="btnClass" />
+<!-- input.component.html -->
+<div class="input-group">
+  <input
+    [attr.type]="type === 'password' && hide ? 'password' : 'text'"
+    class="form-control"
+    [id]="id"
+    [disabled]="disabled"
+    [name]="name"
+    [attr.title]="title"
+    [placeholder]="placeholder"
+    [ngClass]="btnClass" />
+
+  <div class="input-group-append" *ngIf="type === 'password'">
+    <button class="btn" (click)="toggleHide()">
+      <img alt="Toggle Password" src="/assets/images/icons/eye.svg" />
+    </button>
+  </div>
+</div>

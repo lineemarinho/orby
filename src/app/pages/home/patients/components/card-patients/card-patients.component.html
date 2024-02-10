@@ -1,23 +1,13 @@
 <div class="card">
-  <div class="sigla"></div>
+  <div class="sigla">CM</div>
   <div>
     <div class="name"><span>•</span> Camila Mendes</div>
     <div class="situation">Doença de Parkinson</div>
   </div>
-</div>
-
-<div class="card">
-  <div class="sigla"></div>
-  <div>
-    <div class="name"><span>•</span> Camila Mendes</div>
-    <div class="situation">Doença de Parkinson</div>
+  <div *ngIf="data === true">
+    <img src="/assets/images/icons/data.svg" alt="time" />
   </div>
-</div>
-
-<div class="card">
-  <div class="sigla"></div>
-  <div>
-    <div class="name"><span>•</span> Camila Mendes</div>
-    <div class="situation">Doença de Parkinson</div>
+  <div class="arrow" *ngIf="data === false">
+    <img src="/assets/images/icons/arrow.svg" alt="time" />
   </div>
 </div>

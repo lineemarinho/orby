@@ -2,7 +2,7 @@
 .sessions {
   background-color: $white-color;
   border-radius: 16px;
-  padding: 20px;
+  padding: 30px 36px;
   height: 960px;
   box-sizing: border-box;
 }
@@ -55,10 +55,10 @@
 .tab-buttons {
   width: 410px;
   display: flex;
-  margin-bottom: 50px;
-  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
   flex-direction: row;
-  gap: 5px;
+  gap: 16px;
 }
 .container-session {
   display: flex;

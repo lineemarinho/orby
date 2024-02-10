@@ -1,16 +1,40 @@
 @import "/src/styles/base/variables.scss";
-
+.card:hover {
+  background-color: $gray-lightest;
+}
 .card {
   width: 100%;
   float: left;
+  cursor: pointer;
   display: flex;
   margin-top: 20px;
+  align-items: center;
+  padding: 5px;
+  border-radius: 8px;
+  > div:last-child {
+    margin-left: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    background-color: $gray-lightest;
+
+    > div:last-child {
+      opacity: 1;
+    }
+  }
   .sigla {
     width: 56px;
     height: 56px;
     background-color: $dark-color;
     border-radius: 10px;
     margin-right: 10px;
+    line-height: 55px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: $white-color;
   }
   .name {
     @include bodyMedium;
@@ -20,8 +44,17 @@
     font-size: 30px;
     float: left;
     margin: -3px 5px 0 0;
+    color: $green;
   }
   .situation {
     @include regularMedium;
+  }
+}
+
+.arrow {
+  transform: rotate(-90deg);
+  float: right;
+  img {
+    width: 16px !important;
   }
 }

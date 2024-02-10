@@ -32,6 +32,8 @@ import { NotificationComponent } from './pages/home/sessions/components/notifica
 import { ProfileComponent } from './pages/home/sessions/components/profile/profile.component';
 import { EditProfileComponent } from './pages/home/sessions/components/edit-profile/edit-profile.component';
 import { FeedbackComponent } from './pages/home/sessions/components/feedback/feedback.component';
+import { CardSessionHistoryComponent } from './pages/home/historic/components/card-session-history/card-session-history.component';
+import { SessionPauseStopComponent } from './pages/home/sessions/components/session-pause-stop/session-pause-stop.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +66,8 @@ import { FeedbackComponent } from './pages/home/sessions/components/feedback/fee
     ProfileComponent,
     EditProfileComponent,
     FeedbackComponent,
+    CardSessionHistoryComponent,
+    SessionPauseStopComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatDialogModule],
   providers: [],

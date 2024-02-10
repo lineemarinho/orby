@@ -2,7 +2,7 @@
 .container-menu {
   background-color: $white-color;
   border-radius: 16px;
-  padding: 10px;
+  padding: 24px;
   box-sizing: border-box;
   .menu {
     gap: 10px;
@@ -10,12 +10,14 @@
     a,
     button {
       width: 100%;
-      padding: 13px 10px;
+      padding: 0 10px;
       border: none;
       background: none;
+      font-size: 24px !important;
       cursor: pointer;
       @include bodyMedium;
       font-weight: bold;
+      height: 56px;
     }
 
     .active-link {

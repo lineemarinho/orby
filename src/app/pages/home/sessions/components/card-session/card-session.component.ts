@@ -1,4 +1,5 @@
 import { Component, Input } from "@angular/core";
+import { ModalSequenceService } from "../../services/modal-sequence.service";
 
 @Component({
   selector: "app-card-session",
@@ -7,4 +8,10 @@ import { Component, Input } from "@angular/core";
 })
 export class CardSessionComponent {
   @Input() btnClass: string = "";
+  @Input() time = true;
+  @Input() play = false;
+  constructor(private modalSequence: ModalSequenceService) {}
+  openVideo() {
+    this.modalSequence.goVideo();
+  }
 }

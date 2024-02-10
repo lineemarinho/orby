@@ -2,7 +2,25 @@
   <img src="/assets/images/illustrations/exercicio.png" alt="time" />
   <div class="title">Ana Matos</div>
   <div class="subtitle">Doença de Parkinson</div>
-  <div class="subtitle">
+  <div class="subtitle" *ngIf="time">
     <img src="/assets/images/icons/clock.svg" alt="time" /> 00:25:00 / 00:30:00
+  </div>
+  <div class="buttons-video">
+    <img
+      *ngIf="!play"
+      src="/assets/images/icons/pause.svg"
+      (click)="openVideo()"
+      alt="time" />
+    <img
+      src="/assets/images/icons/stop.svg"
+      *ngIf="!play"
+      (click)="openVideo()"
+      alt="time" />
+
+    <img
+      *ngIf="play"
+      src="/assets/images/icons/play.svg"
+      (click)="openVideo()"
+      alt="time" />
   </div>
 </div>

@@ -10,50 +10,17 @@
   padding: 20px 0;
   box-sizing: border-box;
 }
+.title-modal {
+  border-bottom: 0;
+  padding: 10px 0 0 0;
+  line-height: 4px;
+}
 
+.subtitle-modal {
+  font-size: 16px !important;
+}
 .date {
   @include bodyMedium;
   font-weight: bold;
   font-size: 14px;
-}
-.time {
-  float: left;
-  border-radius: 10px;
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-  margin-top: 20px;
-  border: 1px solid $dark-color;
-}
-
-.description {
-  float: left;
-  margin: 0 0 0 20px;
-  width: 511px;
-}
-
-.image {
-  width: 168px;
-  float: left;
-  height: 112px;
-  overflow: hidden;
-  img {
-    height: 100%;
-    width: 100%;
-  }
-}
-
-.title {
-  @include bodyMedium;
-  font-weight: bold;
-  margin-top: 0;
-}
-
-.subtitle {
-  @include regularMedium;
-  margin-top: 0;
-}
-
-.expand {
-  float: right;
 }

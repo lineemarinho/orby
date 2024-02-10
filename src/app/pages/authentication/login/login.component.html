@@ -4,8 +4,7 @@
     id="email"
     name="email"
     title="email"
-    placeholder="Email"
-  >
+    placeholder="Email">
   </app-input>
 
   <app-input
@@ -13,18 +12,21 @@
     id="password"
     name="password"
     title="password"
-    placeholder="Password"
-  >
+    placeholder="Password">
   </app-input>
 
-  <div class="forgot-password">Esqueceu sua senha?</div>
+  <div class="forgot-password">
+    Esqueceu sua senha?
+    <div class="arrow">
+      <img alt="Password" src="/assets/images/icons/arrow.svg" />
+    </div>
+  </div>
 
   <app-button
     btnText="Acessar"
     btnClass="btn-primary"
     [image]="false"
-    (click)="save()"
-  ></app-button>
+    (click)="save()"></app-button>
 
   <div class="divider">
     <span class="line"></span>
@@ -37,22 +39,19 @@
     btnClass="btn-outline"
     [image]="true"
     [src]="iconGoogle"
-    (btnClick)="save()"
-  ></app-button>
+    (btnClick)="save()"></app-button>
 
   <app-button
     btnText="Acessar com o Facebook"
     btnClass="btn-outline"
     [src]="iconFacebook"
     [image]="true"
-    (btnClick)="save()"
-  ></app-button>
+    (btnClick)="save()"></app-button>
 
   <app-button
     btnText="Acessar com a Apple"
     btnClass="btn-outline"
     [src]="iconApple"
     (btnClick)="save()"
-    [image]="true"
-  ></app-button>
+    [image]="true"></app-button>
 </div>

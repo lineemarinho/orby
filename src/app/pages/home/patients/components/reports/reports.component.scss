@@ -30,6 +30,15 @@ input {
 }
 .detail {
   font-size: 14px;
+  line-height: 20px;
+  p {
+    margin: 0;
+    padding: 0;
+    > img {
+      margin: 0 5px 20px 0;
+      float: left;
+    }
+  }
   > b {
     width: 100%;
     float: left;

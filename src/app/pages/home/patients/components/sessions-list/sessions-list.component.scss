@@ -1,37 +1,89 @@
-.sessions-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import "/src/styles/base/variables.scss";
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.sessions {
-  width: 736px;
-  height: 648px;
-}
-
-.header-text {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.table-header,
+.table-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
 }
-
-.screen-container {
-  text-align: center;
+.line {
   width: 100%;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 10px;
+  float: left;
+  height: 1px;
+  background-color: $dark-color;
 }
-.screen {
-  display: block;
-  margin-bottom: 10px;
-  margin: 0 auto;
+.radio {
+  width: 100%;
+  margin: 20px 0 0 0;
+  float: left;
+}
+input {
+  margin: 3px 5px 0 0;
+  float: left;
+}
+.detail {
+  font-size: 14px;
+  > b {
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+  }
+}
+.header-item {
+  font-weight: bold;
+  font-size: 14px;
+}
+.data {
+  width: 200px;
+}
+.title-item {
+  flex: 3;
   text-align: left;
-  width: 50%;
-  box-sizing: border-box;
+  font-size: 14px;
 }
 
-.screen p, h1 {
-  margin-left: 20px;
+.data-item {
+  flex: 2;
+  font-size: 14px;
+  text-align: left;
+}
+
+.addInfo {
+  margin: 2px 10px 0 0;
+  float: left;
+}
+.action-arrow {
+  float: right;
+  margin: -3px 0 0 10px;
+}
+.action-icon {
+  cursor: pointer;
+  width: 24px;
+  text-align: center;
+}
+
+.table-container {
+  margin: 20px 0;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+select {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+  background-color: $white-color;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 2px solid $dark-color;
+  height: 40px;
+  border-radius: 10px;
 }

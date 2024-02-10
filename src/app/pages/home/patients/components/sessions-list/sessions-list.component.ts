@@ -5,4 +5,9 @@ import { Component } from "@angular/core";
   templateUrl: "./sessions-list.component.html",
   styleUrls: ["./sessions-list.component.scss"],
 })
-export class SessionsListComponent {}
+export class SessionsListComponent {
+  detail = false;
+  openItem() {
+    this.detail = !this.detail;
+  }
+}

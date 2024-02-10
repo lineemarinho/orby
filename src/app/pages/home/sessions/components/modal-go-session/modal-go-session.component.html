@@ -17,6 +17,8 @@
     </div>
   </div>
   <div class="list-patients">
-    <app-card-patients (click)="startSession()"></app-card-patients>
+    <app-card-patients
+      [data]="false"
+      (click)="startSession()"></app-card-patients>
   </div>
 </div>

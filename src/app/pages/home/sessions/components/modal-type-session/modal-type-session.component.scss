@@ -1,8 +1,43 @@
 @import "/src/styles/base/variables.scss";
 
 .options {
-  > div {
-    margin-bottom: 20px;
-    font-size: 24px !important;
-  }
+  font-size: 24px;
+}
+
+.options input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  margin-right: 10px;
+  outline: none;
+}
+
+.options label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 35px;
+}
+
+.options label:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.options input[type="radio"]:checked + label:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  border-radius: 50%;
 }
