@@ -1,0 +1,46 @@
+@import "/src/styles/base/variables.scss";
+.forms-container {
+  width: 100%;
+  margin-top: 10px;
+  background-color: $white-color;
+  border-radius: 16px;
+  padding: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+textarea {
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 200px;
+}
+.detail {
+  height: 546px;
+  overflow-y: auto;
+  width: 100%;
+  float: left;
+}
+.dual-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: inline-block;
+  margin-top: 20px;
+  width: 45%;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+  padding: 0 0 20px 0;
+}
+
+.container-input {
+  margin-top: 20px;
+}

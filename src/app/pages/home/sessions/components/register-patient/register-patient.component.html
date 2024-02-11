@@ -11,4 +11,224 @@
   <div class="subtitle-modal">
     Para realizar o registro do paciente, responda:
   </div>
+  <div class="detail">
+    <div class="container-input">
+      <label for="nome">Nome Completo</label>
+      <app-input
+        btnClass="style-secondy-input"
+        type="text"
+        id="nome"
+        name="nome"
+        title="nome"
+        placeholder="Nome Completo">
+      </app-input>
+    </div>
+
+    <div class="dual-container">
+      <div class="wrapper">
+        <label for="nome">Data de nascimento</label>
+        <app-input
+          btnClass="style-secondy-input"
+          type="date"
+          name="selectedDate">
+        </app-input>
+      </div>
+
+      <div class="wrapper">
+        <label for="genero">Gênero:</label>
+        <app-input
+          id="genero"
+          name="genero"
+          placeholder="Feminino"
+          btnClass="style-secondy-input">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </app-input>
+      </div>
+    </div>
+
+    <div class="container-input">
+      <label for="diagnostico">Diagnóstico clínico</label>
+      <app-input
+        type="text"
+        id="diagnostico"
+        name="diagnostico"
+        title="diagnostico"
+        btnClass="style-secondy-input"
+        placeholder="Diagnóstico clínico">
+      </app-input>
+    </div>
+
+    <div class="container-input">
+      <label for="Sintomas">Sintomas</label>
+      <app-input
+        type="text"
+        id="sintomas"
+        btnClass="style-secondy-input"
+        name="sintomas"
+        title="sintomas"
+        placeholder="Mobilidade reduzida">
+      </app-input>
+    </div>
+
+    <div class="dual-container">
+      <div class="wrapper">
+        <label for="nome">Data de nascimento</label>
+
+        <app-input
+          type="date"
+          btnClass="style-secondy-input"
+          name="selectedDate"
+          btnClass="style-secondy-input">
+        </app-input>
+      </div>
+
+      <div class="wrapper">
+        <label for="especifica">Lesão específica</label>
+        <app-input
+          type="text"
+          id="especifica"
+          name="especifica"
+          btnClass="style-secondy-input"
+          title="especifica"
+          placeholder="Lesão específica">
+        </app-input>
+      </div>
+    </div>
+    <div class="container-input">
+      <label for="nome">Sintomas</label>
+      <app-input
+        btnClass="style-secondy-input"
+        type="text"
+        id="nome"
+        name="nome"
+        title="nome"
+        placeholder="Nome Completo">
+      </app-input>
+    </div>
+
+    <div class="dual-container">
+      <div class="wrapper">
+        <label for="nome">Data de inicial dos sintomas</label>
+        <app-input
+          btnClass="style-secondy-input"
+          type="date"
+          name="selectedDate">
+        </app-input>
+      </div>
+
+      <div class="wrapper">
+        <label for="genero">Lesão específica</label>
+        <app-input
+          id="genero"
+          name="genero"
+          placeholder="Feminino"
+          btnClass="style-secondy-input">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </app-input>
+      </div>
+    </div>
+
+    <div class="container-input">
+      <label for="nome">Progresso dos sintomas</label>
+      <app-input
+        btnClass="style-secondy-input"
+        type="text"
+        id="nome"
+        name="nome"
+        title="nome"
+        placeholder="Nome Completo">
+      </app-input>
+    </div>
+
+    <div class="container-input">
+      <label for="nome">Condições pré-existentes</label>
+      <app-input
+        btnClass="style-secondy-input"
+        type="text"
+        id="nome"
+        name="nome"
+        title="nome"
+        placeholder="Nome Completo">
+      </app-input>
+    </div>
+
+    <div class="container-input">
+      <label for="nome">História clínica</label>
+      <app-input
+        btnClass="style-secondy-input"
+        type="text"
+        id="nome"
+        name="nome"
+        title="nome"
+        placeholder="Nome Completo">
+      </app-input>
+    </div>
+
+    <div class="container-input">
+      <label for="nome">Antecedentes familiares</label>
+      <app-input
+        btnClass="style-secondy-input"
+        type="text"
+        id="nome"
+        name="nome"
+        title="nome"
+        placeholder="Nome Completo">
+      </app-input>
+    </div>
+
+    <div class="container-input">
+      <label for="nome">Uso de fármacos</label>
+      <app-input
+        btnClass="style-secondy-input"
+        type="text"
+        id="nome"
+        name="nome"
+        title="nome"
+        placeholder="Nome Completo">
+      </app-input>
+    </div>
+
+    <div class="container-input">
+      <label for="nome">Uso de drogas </label>
+      <app-input
+        btnClass="style-secondy-input"
+        type="text"
+        id="nome"
+        name="nome"
+        title="nome"
+        placeholder="Nome Completo">
+      </app-input>
+    </div>
+
+    <div class="container-input">
+      <label for="nome">Definir objetivos </label>
+      <app-input
+        btnClass="style-secondy-input"
+        type="text"
+        id="nome"
+        name="nome"
+        title="nome"
+        placeholder="Nome Completo">
+      </app-input>
+    </div>
+
+    <div class="container-input">
+      <label for="nome">Observações </label>
+      <textarea name="message" id="message"></textarea>
+    </div>
+  </div>
+  <div class="tab-buttons-modal">
+    <app-button
+      btnText="Continuar"
+      btnClass="btn-primary-small"
+      (click)="close()"
+      [image]="false"></app-button>
+    <app-button
+      btnText="Cancelar"
+      (click)="close()"
+      btnClass="btn-outline-small"
+      [image]="false"></app-button>
+  </div>
 </div>
