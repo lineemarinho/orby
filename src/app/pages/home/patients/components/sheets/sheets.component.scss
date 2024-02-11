@@ -32,20 +32,17 @@ label {
 .container-input {
   margin-top: 20px;
 }
-@import "/src/styles/base/variables.scss";
-.table-container {
-  width: 100%;
-  border-collapse: collapse;
-}
 
-.table-header,
-.table-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  font-size: 14px;
-  border-bottom: 1px solid #ccc;
+select {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+  background-color: $white-color;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 2px solid $dark-color;
+  height: 40px;
+  border-radius: 10px;
 }
 .line {
   width: 100%;
@@ -69,45 +66,4 @@ input {
     float: left;
     padding: 20px 0;
   }
-}
-.header-item {
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.title-item {
-  flex: 3;
-  text-align: left;
-  font-size: 14px;
-}
-
-.data-item {
-  flex: 2;
-  font-size: 14px;
-  text-align: left;
-}
-
-.action-icon {
-  cursor: pointer;
-  width: 24px;
-  text-align: center;
-}
-
-.table-container {
-  margin: 20px 0;
-}
-
-.table-row:last-child {
-  border-bottom: none;
-}
-select {
-  width: 100%;
-  float: left;
-  margin-top: 10px;
-  background-color: $white-color;
-  padding: 0 10px;
-  box-sizing: border-box;
-  border: 2px solid $dark-color;
-  height: 40px;
-  border-radius: 10px;
 }

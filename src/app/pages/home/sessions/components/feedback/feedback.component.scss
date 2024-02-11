@@ -1,6 +1,6 @@
 @import "/src/styles/base/variables.scss";
 b {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 textarea {
@@ -8,8 +8,11 @@ textarea {
   width: 337px;
   margin: 10px 0;
   border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
   height: 72px;
   border: 1px solid $dark-color;
+  font-family: "Montserrat", sans-serif;
 }
 
 .title-modal {

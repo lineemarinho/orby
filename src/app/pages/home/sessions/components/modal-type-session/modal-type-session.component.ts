@@ -15,4 +15,7 @@ export class ModalTypeSessionComponent {
   back() {
     this.modalSequence.goSession();
   }
+  close() {
+    this.modalSequence.close();
+  }
 }

@@ -15,4 +15,7 @@ export class ModalTypeExerciseSessionComponent {
   back() {
     this.modalSequence.goTypeSession();
   }
+  close() {
+    this.modalSequence.close();
+  }
 }

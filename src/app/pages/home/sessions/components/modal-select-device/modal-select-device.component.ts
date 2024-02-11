@@ -15,4 +15,7 @@ export class ModalSelectDeviceComponent {
   back() {
     this.modalSequence.goTypeExercise();
   }
+  close() {
+    this.modalSequence.close();
+  }
 }

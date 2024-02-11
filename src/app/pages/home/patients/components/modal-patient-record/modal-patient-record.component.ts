@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core";
+import { ModalSequenceService } from "../../../sessions/services/modal-sequence.service";
 
 @Component({
   selector: "app-modal-patient-record",
@@ -18,11 +19,14 @@ export class ModalPatientRecordComponent {
   ];
   @Output() onTabChange = new EventEmitter<number>();
 
-  constructor() {}
+  constructor(private modalSequence: ModalSequenceService) {}
 
   ngOnInit(): void {}
 
   setTab(tabId: string): void {
     this.activatedTab = tabId;
+  }
+  close() {
+    this.modalSequence.close();
   }
 }

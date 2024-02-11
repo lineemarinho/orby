@@ -1,18 +1,5 @@
 @import "/src/styles/base/variables.scss";
-.table-container {
-  width: 100%;
-  border-collapse: collapse;
-}
 
-.table-header,
-.table-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  font-size: 14px;
-  border-bottom: 1px solid #ccc;
-}
 .line {
   width: 100%;
   float: left;
@@ -45,45 +32,17 @@ input {
     padding: 20px 0;
   }
 }
-.header-item {
-  font-weight: bold;
-  font-size: 14px;
-}
-.data {
-  width: 200px;
-}
-.title-item {
-  flex: 3;
-  text-align: left;
-  font-size: 14px;
-}
-
-.data-item {
-  flex: 2;
-  font-size: 14px;
-  text-align: left;
-}
-
 .addInfo {
   margin: 2px 10px 0 0;
   float: left;
 }
 .action-arrow {
   float: right;
-  margin: -3px 0 0 10px;
-}
-.action-icon {
   cursor: pointer;
-  width: 24px;
-  text-align: center;
-}
-
-.table-container {
-  margin: 20px 0;
-}
-
-.table-row:last-child {
-  border-bottom: none;
+  margin: -3px 0 0 10px;
+  > img {
+    width: 16px !important;
+  }
 }
 select {
   width: 100%;

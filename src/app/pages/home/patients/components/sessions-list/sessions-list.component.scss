@@ -67,6 +67,9 @@ input {
   cursor: pointer;
   width: 24px;
   text-align: center;
+  > img {
+    width: 16px;
+  }
 }
 
 .table-container {

@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { ModalSequenceService } from "../sessions/services/modal-sequence.service";
 
 @Component({
   selector: "app-historic",
@@ -8,6 +9,8 @@ import { Component } from "@angular/core";
 export class HistoricComponent {
   iconAdd = "assets/images/icons/iconAdd.svg";
   iconDate = "assets/images/icons/iconDate.svg";
-  back() {}
-  close() {}
+  constructor(private modalSequence: ModalSequenceService) {}
+  close() {
+    this.modalSequence.close();
+  }
 }

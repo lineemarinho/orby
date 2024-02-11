@@ -1,5 +1,14 @@
 <div class="container-modal">
-  <div class="title-modal">Dashboard</div>
+  <div class="title-modal">
+    Dashboard
+
+    <div class="close" (click)="close()">
+      <img
+        alt="search"
+        class="search-icon"
+        src="/assets/images/icons/close.svg" />
+    </div>
+  </div>
   <div class="subtitle-modal">Vamos organizar seus indicadores.</div>
   <div class="search-container">
     <input
@@ -13,20 +22,27 @@
         src="/assets/images/icons/search.svg" />
     </div>
   </div>
+  <!-- <input matInput [matDatepicker]="picker" style="display: none" />
 
+  <mat-datepicker #picker></mat-datepicker> -->
+  <!-- <div class="teste">
+    <div *ngFor="let indicator of indicators">
+      {{ indicator.name }}
+    </div>
+  </div> -->
   <div class="tab-buttons-actions">
     <app-button
       btnText="Adicionar indicador"
       btnClass="btn-outline-small"
-      (click)="back()"
       [src]="iconAdd"
+      (click)="openFilter()"
       [image]="true"></app-button
     ><app-button
       btnText="Por data"
+      (click)="openDialog()"
       btnClass="btn-primary-small"
       [image]="true"
-      [src]="iconDate"
-      (click)="close()"></app-button>
+      [src]="iconDate"></app-button>
   </div>
 
   <div class="container-time">
