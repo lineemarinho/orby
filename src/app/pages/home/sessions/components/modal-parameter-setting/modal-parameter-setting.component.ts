@@ -18,7 +18,7 @@ export class ModalParameterSettingComponent {
   ngOnInit() {}
 
   close() {
-    this.modalSequence.close();
+    this.modalSequence.goPatientSession();
   }
   back() {
     this.modalSequence.goTypeDevice();

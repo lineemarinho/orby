@@ -14,6 +14,7 @@ import { ProfileComponent } from "../components/profile/profile.component";
 import { EditProfileComponent } from "../components/edit-profile/edit-profile.component";
 import { FeedbackComponent } from "../components/feedback/feedback.component";
 import { SessionPauseStopComponent } from "../components/session-pause-stop/session-pause-stop.component";
+import { PatientInSessionComponent } from "../components/patient-in-session/patient-in-session.component";
 
 @Injectable({
   providedIn: "root",
@@ -156,6 +157,15 @@ export class ModalSequenceService {
     this.dialogRef = this.dialog.open(SessionPauseStopComponent, {
       width: "727px",
       height: "368px",
+    });
+    this.dialogRef.afterClosed().subscribe((result: any) => {});
+  }
+
+  goPatientSession() {
+    this.dialogRef?.close();
+    this.dialogRef = this.dialog.open(PatientInSessionComponent, {
+      width: "800px",
+      height: "800px",
     });
     this.dialogRef.afterClosed().subscribe((result: any) => {});
   }

@@ -41,6 +41,7 @@ import { CalendarComponent } from "./shared/components/calendar/calendar.compone
 import { MatButtonModule } from "@angular/material/button";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatNativeDateModule } from "@angular/material/core";
+import { PatientInSessionComponent } from './pages/home/sessions/components/patient-in-session/patient-in-session.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +77,7 @@ import { MatNativeDateModule } from "@angular/material/core";
     CardSessionHistoryComponent,
     SessionPauseStopComponent,
     CalendarComponent,
+    PatientInSessionComponent,
   ],
   imports: [
     BrowserModule,
