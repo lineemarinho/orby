@@ -18,7 +18,9 @@ export class DashboardComponent {
     { name: "Doença de Parkinson" },
     { name: "Lesão Medular" },
   ];
-  @ViewChild("picker") datepicker!: MatDatepicker<any>;
+  @ViewChild("picker") datepicker!: MatDatepicker<Date>;
+  filter = false;
+  filterData = false;
   constructor(
     private modalSequence: ModalSequenceService,
     public dialog: MatDialog
@@ -27,7 +29,9 @@ export class DashboardComponent {
     this.modalSequence.close();
   }
   openDialog(): void {
-    this.datepicker.open();
+    this.filterData = !this.filterData;
   }
-  openFilter() {}
+  openFilter() {
+    this.filter = !this.filter;
+  }
 }

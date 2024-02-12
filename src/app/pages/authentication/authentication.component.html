@@ -2,26 +2,35 @@
   <div class="container">
     <div class="logo"></div>
     <div class="authentication">
-      <div class="tab-buttons">
+      <div class="tab-buttons" *ngIf="createPassword === false">
         <div
           class="tab"
           [class.active]="activeTab === 'login'"
-          (click)="setActiveTab('login')"
-        >
+          (click)="setActiveTab('login')">
           Entrar
         </div>
         <div
           class="tab"
           [class.active]="activeTab === 'register'"
-          (click)="setActiveTab('register')"
-        >
+          (click)="setActiveTab('register')">
           Criar Conta
         </div>
       </div>
 
+      <div class="tab-buttons" *ngIf="createPassword === true">
+        <div class="tab active" (click)="setActiveTab('login')">Senha</div>
+        <div class="tab space" (click)="setActiveTab('register')"></div>
+      </div>
+
       <div class="tab-content">
         <app-login *ngIf="activeTab === 'login'"></app-login>
-        <app-register *ngIf="activeTab === 'register'"></app-register>
+        <app-register
+          (onCreatePassword)="handleCreatePassword($event)"
+          *ngIf="
+            activeTab === 'register' && createPassword === false
+          "></app-register>
+        <app-create-password
+          *ngIf="createPassword === true"></app-create-password>
       </div>
     </div>
   </div>

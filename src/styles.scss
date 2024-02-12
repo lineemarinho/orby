@@ -184,3 +184,54 @@ body {
 .table-row:last-child {
   border-bottom: none;
 }
+
+.background {
+  background-color: rgba(0, 0, 0, 0.1058823529);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1111111111111;
+  .filters {
+    width: 334px;
+    height: 221px;
+    position: absolute;
+    right: 27px;
+    background: white;
+    border-radius: 8px;
+    margin-top: 236px;
+    padding: 10px;
+    box-sizing: border-box;
+    > b {
+      width: 100%;
+      text-align: center;
+      float: left;
+      padding: 10px 0 20px 0;
+      border-bottom: 1px solid $gray-lightest;
+    }
+  }
+  .data {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 27px;
+    background: white;
+    border-radius: 8px;
+    margin-top: 236px;
+    padding: 10px;
+    box-sizing: border-box;
+    > b {
+      width: 100%;
+      text-align: center;
+      float: left;
+      padding: 10px 0 20px 0;
+      border-bottom: 1px solid $gray-lightest;
+    }
+  }
+
+  .item {
+    margin: 20px 0 0 0;
+    width: 100%;
+    float: left;
+    display: block;
+  }
+}

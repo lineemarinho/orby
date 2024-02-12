@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { ModalSequenceService } from "../../services/modal-sequence.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-profile",
@@ -7,7 +8,10 @@ import { ModalSequenceService } from "../../services/modal-sequence.service";
   styleUrls: ["./profile.component.scss"],
 })
 export class ProfileComponent {
-  constructor(private modalSequence: ModalSequenceService) {}
+  constructor(
+    private modalSequence: ModalSequenceService,
+    private router: Router
+  ) {}
   editProfile() {
     this.modalSequence.goEditProfile();
   }
@@ -15,5 +19,8 @@ export class ProfileComponent {
     this.modalSequence.goFeedback();
   }
 
-  exit() {}
+  exit() {
+    this.router.navigate(["/login"]);
+    this.modalSequence.close();
+  }
 }

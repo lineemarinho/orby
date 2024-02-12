@@ -1,3 +1,18 @@
+<div class="background" *ngIf="filter">
+  <div class="filters">
+    <b>Adicionar indicador</b>
+    <div class="item" *ngFor="let indicator of indicators">
+      <input (click)="openFilter()" type="checkbox" /> {{ indicator.name }}
+    </div>
+  </div>
+</div>
+
+<div class="background" *ngIf="filterData">
+  <div class="data">
+    <mat-calendar (click)="openDialog()"></mat-calendar>
+  </div>
+</div>
+
 <div class="container-modal">
   <div class="title-modal">
     Dashboard
@@ -22,14 +37,7 @@
         src="/assets/images/icons/search.svg" />
     </div>
   </div>
-  <!-- <input matInput [matDatepicker]="picker" style="display: none" />
 
-  <mat-datepicker #picker></mat-datepicker> -->
-  <!-- <div class="teste">
-    <div *ngFor="let indicator of indicators">
-      {{ indicator.name }}
-    </div>
-  </div> -->
   <div class="tab-buttons-actions">
     <app-button
       btnText="Adicionar indicador"

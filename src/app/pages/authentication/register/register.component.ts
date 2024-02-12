@@ -1,19 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss'],
+  selector: "app-register",
+  templateUrl: "./register.component.html",
+  styleUrls: ["./register.component.scss"],
 })
 export class RegisterComponent {
+  @Output() onCreatePassword = new EventEmitter<boolean>();
   listNetwork = [
-    { name: 'google', img: 'assets/images/icons/google.svg', id: 'googleId' },
+    { name: "google", img: "assets/images/icons/google.svg", id: "googleId" },
     {
-      name: 'facebook',
-      img: 'assets/images/icons/facebook.svg',
-      id: 'facebookId',
+      name: "facebook",
+      img: "assets/images/icons/facebook.svg",
+      id: "facebookId",
     },
-    { name: 'apple', img: 'assets/images/icons/apple.svg', id: 'appleId' },
+    { name: "apple", img: "assets/images/icons/apple.svg", id: "appleId" },
   ];
-  save() {}
+  save() {
+    this.onCreatePassword.emit(true);
+  }
 }

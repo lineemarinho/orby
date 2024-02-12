@@ -1,3 +1,17 @@
+<div class="background" *ngIf="filter">
+  <div class="filters">
+    <b>Adicionar indicador</b>
+    <div class="item" *ngFor="let indicator of indicators">
+      <input (click)="openFilters()" type="checkbox" /> {{ indicator.name }}
+    </div>
+  </div>
+</div>
+<div class="background" *ngIf="filterData">
+  <div class="data">
+    <mat-calendar (click)="openDialog()"></mat-calendar>
+  </div>
+</div>
+
 <div class="container-modal">
   <div class="title-modal">
     Histórico
@@ -27,9 +41,11 @@
       btnText="Adicionar indicador"
       btnClass="btn-outline-small"
       [src]="iconAdd"
+      (click)="openFilters()"
       [image]="true"></app-button
     ><app-button
       btnText="Por data"
+      (click)="openDialog()"
       btnClass="btn-primary-small"
       [image]="true"
       [src]="iconDate"></app-button>
