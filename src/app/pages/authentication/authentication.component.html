@@ -30,6 +30,7 @@
             activeTab === 'register' && createPassword === false
           "></app-register>
         <app-create-password
+          (onBack)="handleBack($event)"
           *ngIf="createPassword === true"></app-create-password>
       </div>
     </div>

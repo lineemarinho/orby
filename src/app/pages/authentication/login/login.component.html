@@ -1,57 +1,73 @@
-<div class="form">
-  <app-input
-    type="text"
-    id="email"
-    name="email"
-    title="email"
-    placeholder="Email">
-  </app-input>
-
-  <app-input
-    type="password"
-    id="password"
-    name="password"
-    title="password"
-    placeholder="Password">
-  </app-input>
-
-  <div class="forgot-password">
-    Esqueceu sua senha?
-    <div class="arrow">
-      <img alt="Password" src="/assets/images/icons/arrow.svg" />
+<form #form="ngForm">
+  <div class="form">
+    <app-input
+      type="email"
+      id="email"
+      name="email"
+      title="Email"
+      [(ngModel)]="user.email"
+      placeholder="Email"
+      required
+      email
+      #email="ngModel">
+    </app-input>
+    <div *ngIf="email.invalid && email.touched" class="error">
+      Email inválido.
     </div>
+
+    <app-input
+      type="password"
+      id="password"
+      name="password"
+      title="Password"
+      [(ngModel)]="user.password"
+      placeholder="Password"
+      required
+      minlength="8"
+      #password="ngModel">
+    </app-input>
+    <div *ngIf="password.invalid && password.touched" class="error">
+      A senha deve ter pelo menos 8 caracteres.
+    </div>
+
+    <div class="forgot-password">
+      Esqueceu sua senha?
+      <div class="arrow">
+        <img alt="Password" src="/assets/images/icons/arrow.svg" />
+      </div>
+    </div>
+
+    <app-button
+      btnText="Acessar"
+      [disabled]="form?.invalid ?? true"
+      btnClass="btn-primary"
+      (click)="save()"></app-button>
+
+    <div class="divider">
+      <span class="line"></span>
+      <span class="text">Ou</span>
+      <span class="line"></span>
+    </div>
+
+    <app-button
+      btnText="Acessar com o Google"
+      btnClass="btn-outline"
+      [image]="true"
+      [src]="iconGoogle"
+      (btnClick)="save()"></app-button>
+
+    <app-button
+      btnText="Acessar com o Facebook"
+      btnClass="btn-outline"
+      [src]="iconFacebook"
+      [image]="true"
+      (btnClick)="save()"></app-button>
+
+    <app-button
+      btnText="Acessar com a Apple"
+      btnClass="btn-outline"
+      [src]="iconApple"
+      (btnClick)="save()"
+      [image]="true"></app-button>
   </div>
-
-  <app-button
-    btnText="Acessar"
-    btnClass="btn-primary"
-    [image]="false"
-    (click)="save()"></app-button>
-
-  <div class="divider">
-    <span class="line"></span>
-    <span class="text">Ou</span>
-    <span class="line"></span>
-  </div>
-
-  <app-button
-    btnText="Acessar com o Google"
-    btnClass="btn-outline"
-    [image]="true"
-    [src]="iconGoogle"
-    (btnClick)="save()"></app-button>
-
-  <app-button
-    btnText="Acessar com o Facebook"
-    btnClass="btn-outline"
-    [src]="iconFacebook"
-    [image]="true"
-    (btnClick)="save()"></app-button>
-
-  <app-button
-    btnText="Acessar com a Apple"
-    btnClass="btn-outline"
-    [src]="iconApple"
-    (btnClick)="save()"
-    [image]="true"></app-button>
-</div>
+</form>

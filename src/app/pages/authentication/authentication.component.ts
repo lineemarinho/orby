@@ -8,11 +8,21 @@ import { Component } from "@angular/core";
 export class AuthenticationComponent {
   activeTab: string = "login";
 
+  constructor() {
+    console.log(this.createPassword);
+  }
+
+  ngOnInit() {
+    console.log(this.createPassword);
+  }
   createPassword = false;
   setActiveTab(tabName: string): void {
     this.activeTab = tabName;
   }
   handleCreatePassword(event: boolean): void {
     this.createPassword = event;
+  }
+  handleBack(data: any) {
+    this.createPassword = false;
   }
 }

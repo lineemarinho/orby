@@ -1,14 +1,16 @@
 <!-- input.component.html -->
 <div class="input-group">
   <input
-    [attr.type]="type === 'password' && hide ? 'password' : 'text'"
-    class="form-control"
+    [attr.type]="type"
+    [class]="btnClass"
     [id]="id"
     [disabled]="disabled"
+    [(ngModel)]="value"
+    (ngModelChange)="onChange($event)"
     [name]="name"
     [attr.title]="title"
     [placeholder]="placeholder"
-    [ngClass]="btnClass" />
+    (blur)="onTouched()" />
 
   <div class="input-group-append" *ngIf="type === 'password'">
     <button class="btn" (click)="toggleHide()">

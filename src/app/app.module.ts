@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { MatInputModule } from "@angular/material/input";
 import { AppRoutingModule } from "./app-routing.module";
@@ -41,9 +41,11 @@ import { CalendarComponent } from "./shared/components/calendar/calendar.compone
 import { MatButtonModule } from "@angular/material/button";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatNativeDateModule } from "@angular/material/core";
-import { PatientInSessionComponent } from './pages/home/sessions/components/patient-in-session/patient-in-session.component';
-import { CreatePasswordComponent } from './pages/authentication/create-password/create-password.component';
-
+import { PatientInSessionComponent } from "./pages/home/sessions/components/patient-in-session/patient-in-session.component";
+import { CreatePasswordComponent } from "./pages/authentication/create-password/create-password.component";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
+import { ToastrModule } from "ngx-toastr";
 @NgModule({
   declarations: [
     AppComponent,
@@ -81,6 +83,7 @@ import { CreatePasswordComponent } from './pages/authentication/create-password/
     PatientInSessionComponent,
     CreatePasswordComponent,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -91,6 +94,13 @@ import { CreatePasswordComponent } from './pages/authentication/create-password/
     MatNativeDateModule,
     MatInputModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: "toast-top-center",
+      preventDuplicates: true,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,50 +1,62 @@
-<div class="form">
-  <app-input
-    type="text"
-    id="email"
-    name="email"
-    title="email"
-    placeholder="Nome">
-  </app-input>
+<form #form="ngForm">
+  <div class="form">
+    <app-input
+      type="text"
+      id="name"
+      [(ngModel)]="user.name"
+      name="name"
+      required
+      name
+      #nameModel="ngModel"
+      placeholder="Nome">
+    </app-input>
 
-  <app-input
-    type="text"
-    id="password"
-    name="password"
-    title="password"
-    placeholder="Sobrenome">
-  </app-input>
+    <app-input
+      type="text"
+      id="surname"
+      required
+      [(ngModel)]="user.surname"
+      name="surname"
+      #surnameModel="ngModel"
+      placeholder="Sobrenome">
+    </app-input>
 
-  <app-input
-    type="text"
-    id="password"
-    name="password"
-    title="password"
-    placeholder="E-mail">
-  </app-input>
+    <app-input
+      type="text"
+      required
+      id="email"
+      [(ngModel)]="user.email"
+      name="email"
+      #emailModel="ngModel"
+      placeholder="E-mail">
+    </app-input>
 
-  <app-input
-    type="text"
-    id="password"
-    name="password"
-    title="password"
-    placeholder="Token">
-  </app-input>
+    <app-input
+      type="text"
+      id="token"
+      name="token"
+      #tokenModel="ngModel"
+      required
+      [(ngModel)]="user.token"
+      placeholder="Token">
+    </app-input>
 
-  <app-button
-    btnText="Continuar"
-    btnClass="btn-primary"
-    (click)="save()"></app-button>
+    <app-button
+      btnText="Continuar"
+      btnClass="btn-primary"
+      [disabled]="form?.invalid ?? true"
+      (click)="createUser()"></app-button>
 
-  <div class="divider">
-    <span class="line"></span>
-    <span class="text">Ou continuar com</span>
-    <span class="line"></span>
+    <div class="divider">
+      <span class="line"></span>
+      <span class="text">Ou continuar com</span>
+      <span class="line"></span>
+    </div>
+
+    <div class="tab-buttons">
+      <span *ngFor="let social of listNetwork" class="social-network">
+        <img alt="image" [src]="social.img" [alt]="social.name" />
+      </span>
+    </div>
   </div>
-
-  <div class="tab-buttons">
-    <span *ngFor="let social of listNetwork" class="social-network">
-      <img alt="image" [src]="social.img" [alt]="social.name" />
-    </span>
-  </div>
-</div>
+</form>
